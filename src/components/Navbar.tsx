@@ -16,15 +16,16 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 // import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-// import InboxIcon from "@mui/icons-material/MoveToInbox";
-// import MailIcon from "@mui/icons-material/Mail";
 import NewsPaperIcon from "@mui/icons-material/Newspaper";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import BorderColorIcon from "@mui/icons-material/BorderColor";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { Container } from "@mui/material";
-
-// TODO : ghesmate theme ro dorost konam.
+import {
+  NAVBAR_APPBAR_TYPOGRAPHY,
+  NAVBAR_CONTAINER_DISPLAY,
+  NAVBAR_ICON_BUTTON_DISPLAY,
+} from "../theme/theme";
 
 const drawerWidth = 240;
 
@@ -108,44 +109,29 @@ export default function Navbar() {
             edge="start"
             sx={{
               mr: 2,
-              display: { xl: "none", lg: "none", md: "none", sm: "none" },
+              display: NAVBAR_ICON_BUTTON_DISPLAY,
             }}
           >
             <MenuIcon
               sx={{
-                display: { xl: "none", lg: "none", md: "none", sm: "none" },
+                display: NAVBAR_ICON_BUTTON_DISPLAY,
               }}
             />
           </IconButton>
           <Container
             sx={{
-              display: {
-                xs: "none",
-                xl: "flex",
-                lg: "flex",
-                md: "flex",
-                sm: "flex",
-              },
+              display: NAVBAR_CONTAINER_DISPLAY,
               flexDirection: "row",
               justifyContent: "center",
             }}
           >
             {titles.map((title) => (
               <Typography
-                variant="h6"
+                // variant="p"
                 noWrap
                 component="a"
                 href={title.href}
-                sx={{
-                  mr: 2,
-                  fontFamily: "monospace",
-                  display: "flex",
-                  alignItems: "center",
-                  fontWeight: 700,
-                  letterSpacing: ".12rem",
-                  color: "inherit",
-                  textDecoration: "none",
-                }}
+                sx={{ ...NAVBAR_APPBAR_TYPOGRAPHY }}
               >
                 <span
                   style={{
@@ -170,7 +156,7 @@ export default function Navbar() {
             width: drawerWidth,
             boxSizing: "border-box",
           },
-          display: { xl: "none", lg: "none", md: "none", sm: "none" },
+          display: NAVBAR_ICON_BUTTON_DISPLAY,
         }}
         variant="persistent"
         anchor="left"
