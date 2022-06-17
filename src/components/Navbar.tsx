@@ -14,18 +14,25 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
+// import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+// import InboxIcon from "@mui/icons-material/MoveToInbox";
+// import MailIcon from "@mui/icons-material/Mail";
+import NewsPaperIcon from "@mui/icons-material/Newspaper";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import BorderColorIcon from "@mui/icons-material/BorderColor";
+import PhoneIcon from "@mui/icons-material/Phone";
+import { Container } from "@mui/material";
+
+// TODO : ghesmate theme ro dorost konam.
 
 const drawerWidth = 240;
 
 const titles = [
-  { header: "News", href: "/news" },
-  { header: "Portfolio", href: "/portfolio" },
-  { header: "Writings", href: "/writings" },
-  { header: "Contact Me", href: "/contactme" },
+  { header: "NEWS", href: "/news", icon: <NewsPaperIcon /> },
+  { header: "PORTFOLIO", href: "/portfolio", icon: <AccountBoxIcon /> },
+  { header: "WRITINGS", href: "/writings", icon: <BorderColorIcon /> },
+  { header: "CONTACT ME", href: "/contactme", icon: <PhoneIcon /> },
 ];
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })<{
@@ -92,7 +99,7 @@ export default function Navbar() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
+      <AppBar position="fixed" open={open} sx={{}}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -110,31 +117,49 @@ export default function Navbar() {
               }}
             />
           </IconButton>
-          {titles.map((title) => (
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href={title.href}
-              sx={{
-                mr: 2,
-                fontFamily: "monospace",
-                display: {
-                  xs: "none",
-                  xl: "flex",
-                  lg: "flex",
-                  md: "flex",
-                  sm: "flex",
-                },
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              {title.header}
-            </Typography>
-          ))}
+          <Container
+            sx={{
+              display: {
+                xs: "none",
+                xl: "flex",
+                lg: "flex",
+                md: "flex",
+                sm: "flex",
+              },
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
+            {titles.map((title) => (
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href={title.href}
+                sx={{
+                  mr: 2,
+                  fontFamily: "monospace",
+                  display: "flex",
+                  alignItems: "center",
+                  fontWeight: 700,
+                  letterSpacing: ".12rem",
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                <span
+                  style={{
+                    marginRight: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  {title.icon}
+                </span>
+                <span>{title.header}</span>
+              </Typography>
+            ))}
+          </Container>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -165,6 +190,15 @@ export default function Navbar() {
           {titles.map((title) => (
             <ListItem key={title.header} disablePadding>
               <ListItemButton>
+                <Typography
+                  sx={{
+                    mr: 1,
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  {title.icon}
+                </Typography>{" "}
                 <ListItemText primary={title.header} />
               </ListItemButton>
             </ListItem>
