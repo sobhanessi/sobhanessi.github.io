@@ -22,6 +22,7 @@ import BorderColorIcon from "@mui/icons-material/BorderColor";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { Container } from "@mui/material";
 import {
+  MAIN_COLOR,
   NAVBAR_APPBAR_TYPOGRAPHY,
   NAVBAR_CONTAINER_DISPLAY,
   NAVBAR_ICON_BUTTON_DISPLAY,
@@ -31,9 +32,9 @@ const drawerWidth = 240;
 
 const titles = [
   { header: "NEWS", href: "/news", icon: <NewsPaperIcon /> },
-  { header: "PORTFOLIO", href: "/portfolio", icon: <AccountBoxIcon /> },
+  { header: "PORTFOLIO/ABOUT", href: "/", icon: <AccountBoxIcon /> },
   { header: "WRITINGS", href: "/writings", icon: <BorderColorIcon /> },
-  { header: "CONTACT ME", href: "/contactme", icon: <PhoneIcon /> },
+  { header: "CONTACT", href: "/contact", icon: <PhoneIcon /> },
 ];
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })<{
@@ -100,7 +101,7 @@ export default function Navbar() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} sx={{}}>
+      <AppBar position="fixed" open={open} sx={{ backgroundColor: MAIN_COLOR }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -192,9 +193,9 @@ export default function Navbar() {
         </List>
         <Divider />
       </Drawer>
-      <Main open={open}>
+      {/* <Main open={open}>
         <DrawerHeader />
-      </Main>
+      </Main> */}
     </Box>
   );
 }

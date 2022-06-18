@@ -1,3 +1,7 @@
+export const MAIN_COLOR = "#2d2e30";
+
+export const FONT_FAMILY = "'Source Code Pro', monospace";
+
 export const NAVBAR_ICON_BUTTON_DISPLAY = {
   xl: "none",
   lg: "none",
