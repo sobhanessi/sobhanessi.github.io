@@ -15,6 +15,7 @@ import Sobhanessi from "../pics/sobhanessi.jpg";
 import { FONT_FAMILY, MAIN_COLOR } from "../theme/theme";
 import Footer from "../components/Footer";
 import jobs from "../database/jobs";
+import { deepOrange } from "@mui/material/colors";
 
 export default function Portfolio() {
   return (
@@ -49,9 +50,16 @@ export default function Portfolio() {
               color="#f79d2e"
               sx={{ fontFamily: FONT_FAMILY, fontWeight: 700 }}
             >
-              <i>
-                "This is Sobhan Esfandyari or in shorten you can call me Sobi!"
-              </i>
+              This is "Sobhan Esfandyari" (sobi){" "}
+              <span style={{ color: "white" }}>| </span>
+              <span
+                style={{
+                  textDecoration: "underline #ff6266 5px",
+                  color: "#2e5aeb",
+                }}
+              >
+                A Computer Engineer
+              </span>
             </Typography>
           </Box>
         </Container>
@@ -68,7 +76,8 @@ export default function Portfolio() {
           <Typography
             variant="h4"
             component="div"
-            color="#ff6266"
+            // color="#ff6266"
+            color="white"
             gutterBottom
             sx={{ fontFamily: FONT_FAMILY, fontWeight: 600, mb: 8 }}
           >
@@ -76,16 +85,62 @@ export default function Portfolio() {
             became such a person with these ideas!
           </Typography>
         </Container>
-        <Divider />
+        {/* <Divider /> */}
         <Container
           sx={{
-            display: "flex",
-            flexDirection: "column",
+            // display: "flex",
+            // flexDirection: "column",
             mb: 6,
           }}
         >
-          <Typography
-            variant="h5"
+          <Grid container sx={{ display: "flex", flexDirection: "row" }}>
+            <Grid item sm={1} xs={1} lg={1} xl={1} md={1}>
+              <Box
+                sx={{
+                  color: "white",
+                  borderLeft: "1px solid white",
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  ml: 3,
+                }}
+              >
+                <Avatar
+                  sx={{
+                    width: 92,
+                    height: 92,
+                    ml: -6,
+                    bgcolor: deepOrange[300],
+                    fontSize: "16px",
+                    textAlign: "center",
+                    fontFamily: FONT_FAMILY,
+                  }}
+                >
+                  The Begining
+                </Avatar>
+              </Box>
+            </Grid>
+            <Grid item sm={8} xl={8} lg={8} md={8} xs={8} sx={{ ml: 8 }}>
+              <Typography color="white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                doloribus aperiam consectetur accusamus aliquam quae ut quod. Ea
+                ex at hic velit. Veritatis iste error optio fugit tenetur
+                laborum qui.Lore.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Autem doloribus aperiam consectetur accusamus
+                aliquam quae ut quod. Ea ex at hic velit. Veritatis iste error
+                optio fugit tenetur laborum qui.Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Autem doloribus aperiam
+                consectetur accusamus aliquam quae ut quod. Ea ex at hic velit.
+                Veritatis iste error optio fugit tenetur laborum quim ipsum
+                dolor sit amet consectetur adipisicing elit. Autem doloribus
+                aperiam consectetur accusamus aliquam quae ut quod. Ea ex at hic
+                velit. Veritatis iste error optio fugit tenetur laborum qui
+              </Typography>
+            </Grid>
+          </Grid>
+          {/* <Typography
+            variant="h5"b
             component="div"
             color="#ff6266"
             gutterBottom
@@ -137,10 +192,10 @@ export default function Portfolio() {
             sx={{ fontFamily: FONT_FAMILY }}
           >
             blah blah
-          </Typography>
+          </Typography> */}
         </Container>
-        <Divider />
-        <Container>
+        <hr style={{ color: "white", width: "100%" }} />
+        <Container sx={{ pt: 3, pb: 3 }}>
           {jobs.map((job) => (
             <Grid container xs={12} sx={{ mb: 4 }}>
               <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
@@ -200,6 +255,7 @@ export default function Portfolio() {
                   {job.description}
                 </Typography>
               </Grid>
+              <hr style={{ color: "white", width: "100%" }} />
             </Grid>
           ))}
         </Container>
