@@ -15,7 +15,12 @@ import Sobhanessi from "../pics/sobhanessi.jpg";
 import { FONT_FAMILY, MAIN_COLOR } from "../theme/theme";
 import Footer from "../components/Footer";
 import jobs from "../database/jobs";
-import { deepOrange } from "@mui/material/colors";
+import {
+  deepOrange,
+  deepPurple,
+  lightBlue,
+  lightGreen,
+} from "@mui/material/colors";
 
 export default function Portfolio() {
   return (
@@ -124,8 +129,8 @@ export default function Portfolio() {
             <Grid item sm={8} xl={8} lg={8} md={8} xs={8} sx={{ ml: 8 }}>
               <Typography color="white" fontFamily={FONT_FAMILY}>
                 I born and raise in a very high political family so there is no
-                question about why I'm political activist and seeking freedom
-                for my beloved country.
+                question why I'm political activist and seeking freedom for my
+                beloved country.
                 <br />
                 However I'm not nationalist, I just want to have democracy in my
                 country which if we have it in Iran, there would be no doubt
@@ -227,7 +232,7 @@ export default function Portfolio() {
                     width: 92,
                     height: 92,
                     ml: 3,
-                    bgcolor: deepOrange[300],
+                    bgcolor: lightGreen[300],
                     fontSize: "16px",
                     textAlign: "center",
                     fontFamily: FONT_FAMILY,
@@ -259,7 +264,7 @@ export default function Portfolio() {
                     width: 92,
                     height: 92,
                     ml: -6,
-                    bgcolor: deepOrange[300],
+                    bgcolor: lightBlue[200],
                     fontSize: "16px",
                     textAlign: "center",
                     fontFamily: FONT_FAMILY,
@@ -354,6 +359,20 @@ export default function Portfolio() {
                 prison and like my father they have exiled to a very worst place
                 out of Tehran.
                 <br />
+                From Iran to Greece, I had a very tough journey which I had to
+                flee all the borders illegally with other migrants.
+                <br />
+                Too many things happened to me in Greece, such as living with a
+                smuggler for two years and waiting for my asylum interview for
+                more than 3 years! Not able to find a suitable job and couldn't
+                continue my education in Greece. All of them together has made
+                me a very strong person that will not bend easily during hard
+                and tough situations. I made out of my time in Greece and I
+                learnt so many things despite the all traumas I have been
+                having.
+                <br />
+                The story of me is not finished. But here I just mentioned the
+                very notable ones that have impacted me so much.
               </Typography>
             </Grid>
             <Grid item sm={1} xs={1} lg={1} xl={1} md={1}>
@@ -373,7 +392,7 @@ export default function Portfolio() {
                     width: 92,
                     height: 92,
                     ml: 3,
-                    bgcolor: deepOrange[300],
+                    bgcolor: deepPurple[200],
                     fontSize: "16px",
                     textAlign: "center",
                     fontFamily: FONT_FAMILY,
