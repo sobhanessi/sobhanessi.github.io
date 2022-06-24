@@ -1,4 +1,7 @@
 export const MAIN_COLOR = "#2d2e30";
+export const SECONDARY_COLOR = "#f79d2e";
+export const TERTIARY_COLOR = "#2e5aeb";
+export const QUATERNARY_COLOR = "#ff6266";
 
 export const FONT_FAMILY = "'Source Code Pro', monospace";
 

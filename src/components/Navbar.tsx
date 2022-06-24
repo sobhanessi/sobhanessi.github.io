@@ -1,32 +1,34 @@
 import * as React from "react";
-import { styled, useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import CssBaseline from "@mui/material/CssBaseline";
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-// import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import NewsPaperIcon from "@mui/icons-material/Newspaper";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import BorderColorIcon from "@mui/icons-material/BorderColor";
-import PhoneIcon from "@mui/icons-material/Phone";
+import Box from "@mui/material/Box";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Container } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import {
   MAIN_COLOR,
   NAVBAR_APPBAR_TYPOGRAPHY,
   NAVBAR_CONTAINER_DISPLAY,
   NAVBAR_ICON_BUTTON_DISPLAY,
+  QUATERNARY_COLOR,
+  SECONDARY_COLOR,
 } from "../theme/theme";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+// import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import MenuIcon from "@mui/icons-material/Menu";
+import NewsPaperIcon from "@mui/icons-material/Newspaper";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import PhoneIcon from "@mui/icons-material/Phone";
+import { styled, useTheme } from "@mui/material/styles";
 
 const drawerWidth = 240;
 
@@ -132,13 +134,14 @@ export default function Navbar() {
                 noWrap
                 component="a"
                 href={title.href}
-                sx={{ ...NAVBAR_APPBAR_TYPOGRAPHY }}
+                sx={{ ...NAVBAR_APPBAR_TYPOGRAPHY, color: SECONDARY_COLOR }}
               >
                 <span
                   style={{
                     marginRight: "10px",
                     display: "flex",
                     alignItems: "center",
+                    color: QUATERNARY_COLOR,
                   }}
                 >
                   {title.icon}
@@ -193,9 +196,9 @@ export default function Navbar() {
         </List>
         <Divider />
       </Drawer>
-      {/* <Main open={open}>
+      <Main open={open}>
         <DrawerHeader />
-      </Main> */}
+      </Main>
     </Box>
   );
 }
