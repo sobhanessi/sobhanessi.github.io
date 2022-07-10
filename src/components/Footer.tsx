@@ -19,6 +19,7 @@ function Footer() {
           pt: 2,
           //   position: "static",
         }}
+        maxWidth="xl"
       >
         <Typography color="white" gutterBottom sx={{ fontFamily: FONT_FAMILY }}>
           SOBHAN ESFANDYARI | SOBHANESSI | DAWSHESSI 2018 - 2022

@@ -20,6 +20,7 @@ export default function Portfolio() {
           pt: 15,
           fontFamily: FONT_FAMILY,
         }}
+        maxWidth="xl"
       >
         <Container
           sx={{
