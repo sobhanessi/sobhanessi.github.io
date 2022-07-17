@@ -4,6 +4,7 @@ import news from "../database/news";
 import { FONT_FAMILY, MAIN_COLOR } from "../theme/theme";
 
 // i have to do something today. yeah ?
+// not yet....I guess...
 
 const NewsTiles = () => {
   const newsDivert = (href: string): void => {
