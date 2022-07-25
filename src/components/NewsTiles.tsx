@@ -3,8 +3,7 @@ import React from "react";
 import news from "../database/news";
 import { FONT_FAMILY, MAIN_COLOR } from "../theme/theme";
 
-// i have to do something today. yeah ?
-// not yet....I guess...
+// the time has arrived, finally!
 
 const NewsTiles = () => {
   const newsDivert = (href: string): void => {
