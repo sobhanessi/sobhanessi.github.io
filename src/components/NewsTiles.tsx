@@ -3,7 +3,8 @@ import React from "react";
 import news from "../database/news";
 import { FONT_FAMILY, MAIN_COLOR } from "../theme/theme";
 
-// days are just passing by and still I'm not doing anything.
+// inja ham in tile ha ro tori bayad tarrahi konam ke agar click kard roosh bere safheye khodesh.
+// pas bayad safheye makhsoose un ro ham tarrahi konam.
 
 const NewsTiles = () => {
   const newsDivert = (href: string): void => {

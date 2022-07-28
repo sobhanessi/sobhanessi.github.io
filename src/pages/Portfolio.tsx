@@ -7,6 +7,9 @@ import Jobs from "../components/Jobs";
 import Navbar from "../components/Navbar";
 import Sobhanessi from "../pics/sobhanessi.jpg";
 
+// too portfolio ham ye khoorde taghirat ijad konam.
+// taghirate zaheri.
+
 export default function Portfolio() {
   return (
     <>
