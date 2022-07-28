@@ -3,7 +3,7 @@ import React from "react";
 import news from "../database/news";
 import { FONT_FAMILY, MAIN_COLOR } from "../theme/theme";
 
-// shall I begin after all? I guess yes!!!
+// days are just passing by and still I'm not doing anything.
 
 const NewsTiles = () => {
   const newsDivert = (href: string): void => {
