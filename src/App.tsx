@@ -4,7 +4,7 @@ import News from "./pages/News";
 import Portfolio from "./pages/Portfolio";
 import { Routes, Route } from "react-router-dom";
 
-// TODO: have already started my job.
+// TODO: I haven't started yet!
 function App() {
   return (
     <>
