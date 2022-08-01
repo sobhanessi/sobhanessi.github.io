@@ -1,4 +1,4 @@
-import sobhanessi from "../pics/sobhanessi.jpg";
+import sobhanessi from "../../public/pics/sobhanessi.jpg";
 const news = [
   {
     title: "first header",

@@ -1,7 +1,7 @@
 import { Avatar, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import news from "../database/news";
-import { FONT_FAMILY, MAIN_COLOR } from "../theme/theme";
+import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
 
 // inja ham in tile ha ro tori bayad tarrahi konam ke agar click kard roosh bere safheye khodesh.
 // pas bayad safheye makhsoose un ro ham tarrahi konam.

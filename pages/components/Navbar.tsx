@@ -17,7 +17,7 @@ import {
   NAVBAR_ICON_BUTTON_DISPLAY,
   QUATERNARY_COLOR,
   SECONDARY_COLOR,
-} from "../theme/theme";
+} from "../../public/theme/theme";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";

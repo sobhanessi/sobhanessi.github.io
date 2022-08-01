@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Divider, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { FONT_FAMILY, MAIN_COLOR } from "../theme/theme";
+import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Footer() {

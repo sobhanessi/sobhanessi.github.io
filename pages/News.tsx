@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "@mui/material";
-import Footer from "../components/Footer";
-import { FONT_FAMILY, MAIN_COLOR } from "../theme/theme";
-import Navbar from "../components/Navbar";
-import NewsTiles from "../components/NewsTiles";
+import Footer from "./components/Footer";
+import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
+import Navbar from "./components/Navbar";
+import NewsTiles from "./components/NewsTiles";
 
 const News = () => {
   return (
