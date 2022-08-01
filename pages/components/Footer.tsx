@@ -29,10 +29,21 @@ function Footer() {
           SOBHAN ESFANDYARI | SOBHANESSI | DAWSHESSI 2018 - 2022
         </Typography>
         <Box sx={{ mb: 1 }}>
-          <Typography component="a" href="" color="white" sx={{ mr: 1 }}>
+          <Typography
+            component="a"
+            href="https://linkedin.com/in/sobhanesfandyari/"
+            color="white"
+            sx={{ mr: 1 }}
+            key="1"
+          >
             <LinkedInIcon />
           </Typography>
-          <Typography component="a" href="" color="white">
+          <Typography
+            component="a"
+            href="https://github.com/sobhanessi"
+            color="white"
+            key="2"
+          >
             <GitHubIcon />
           </Typography>
         </Box>
