@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar, Grid, Typography } from "@mui/material";
-import { FONT_FAMILY } from "../theme/theme";
+import { FONT_FAMILY } from "../../public/theme/theme";
 import jobs from "../database/jobs";
 
 function Jobs() {
@@ -10,7 +10,7 @@ function Jobs() {
         <Grid container xs={12} sx={{ mb: 4 }}>
           <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
             <Avatar
-              src={job.image}
+              src={`/pics/${job.image}`}
               alt={job.company}
               variant="square"
               sx={{

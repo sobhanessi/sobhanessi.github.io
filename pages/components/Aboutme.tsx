@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, Box, Grid, Typography } from "@mui/material";
 import aboutme from "../database/aboutme";
-import { FONT_FAMILY } from "../theme/theme";
+import { FONT_FAMILY } from "../../public/theme/theme";
 
 function Aboutme() {
   return (
