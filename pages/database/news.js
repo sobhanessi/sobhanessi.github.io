@@ -1,4 +1,3 @@
-import sobhanessi from "../../public/pics/sobhanessi.jpg";
 const news = [
   {
     title: "first header",
@@ -10,7 +9,7 @@ const news = [
     brief:
       "this will be a brief about the news that will be published on my website.",
     text: "here will be the long text that will be published on its own page when the user clicks on it.",
-    headerImage: sobhanessi,
+    headerImage: "/pics/sobhanessi.jpg",
   },
 ];
 

@@ -54,7 +54,7 @@ const NewsTiles = () => {
                     component="div"
                     color="#ff6266"
                     gutterBottom
-                    sx={{ fontFamily: FONT_FAMILY }}
+                    sx={{ fontFamily: FONT_FAMILY, fontWeight: "bold" }}
                   >
                     {n.title}
                   </Typography>
@@ -72,7 +72,8 @@ const NewsTiles = () => {
                     gutterBottom
                     sx={{ fontFamily: FONT_FAMILY }}
                   >
-                    Author : {n.author}
+                    <span style={{ color: "white" }}>Author : </span>
+                    {n.author}
                   </Typography>
                   <Typography
                     gutterBottom
