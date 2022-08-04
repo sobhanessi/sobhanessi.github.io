@@ -3,8 +3,7 @@ import React from "react";
 import news from "../database/news";
 import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
 
-// khodayi khoob pish raftam ba tavajjoh be moshkelati ke hast.
-// damam garm ensafan!
+// I need to move to graphql
 
 const NewsTiles = () => {
   const newsDivert = (href: string): void => {
