@@ -1,7 +1,7 @@
 import { Avatar, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
-import writings from "../database/writings";
+import writings from "../../public/database/writings";
 
 function WritingsTiles() {
   const writingsDivert = (href) => {

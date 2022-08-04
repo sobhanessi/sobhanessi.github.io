@@ -1,6 +1,6 @@
 import { Avatar, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import news from "../database/news";
+import news from "../../public/database/news";
 import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
 
 // I need to move to graphql

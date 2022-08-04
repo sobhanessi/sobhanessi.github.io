@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, Grid, Typography } from "@mui/material";
 import { FONT_FAMILY } from "../../public/theme/theme";
-import jobs from "../database/jobs";
+import jobs from "../../public/database/jobs";
 
 function Jobs() {
   return (
