@@ -5,6 +5,8 @@ import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <>
       <Divider />
@@ -26,7 +28,7 @@ function Footer() {
           gutterBottom
           sx={{ fontFamily: FONT_FAMILY, fontWeight: "bold" }}
         >
-          SOBHAN ESFANDYARI | SOBHANESSI | DAWSHESSI 2018 - 2022
+          SOBHAN ESFANDYARI | SOBHANESSI | DAWSHESSI 2018 - {year}
         </Typography>
         <Box sx={{ mb: 1 }}>
           <Typography
