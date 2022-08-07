@@ -3,7 +3,7 @@ import { Avatar, Box, Grid, Typography } from "@mui/material";
 import aboutme from "../../public/database/aboutme";
 import { FONT_FAMILY } from "../../public/theme/theme";
 
-function Aboutme() {
+function Aboutme(): JSX.Element {
   return (
     <>
       {aboutme?.map((am) => (

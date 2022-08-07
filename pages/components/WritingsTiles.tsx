@@ -1,10 +1,10 @@
-import { Avatar, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import { Avatar, Card, Container, Grid, Typography } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
 import writings from "../../public/database/writings";
 
-function WritingsTiles() {
-  const writingsDivert = (href) => {
+function WritingsTiles(): JSX.Element {
+  const writingsDivert = (href: string): void => {
     console.log(href);
   };
 

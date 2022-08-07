@@ -3,7 +3,7 @@ import { Avatar, Grid, Typography } from "@mui/material";
 import { FONT_FAMILY } from "../../public/theme/theme";
 import jobs from "../../public/database/jobs";
 
-function Jobs() {
+function Jobs(): JSX.Element {
   return (
     <>
       {jobs.map((job) => (

@@ -5,7 +5,7 @@ import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
 
 // I need to move to graphql
 
-const NewsTiles = () => {
+const NewsTiles = (): JSX.Element => {
   const newsDivert = (href: string): void => {
     // console.log(href);
     // inja bayad redirect konam be page morede nazar.

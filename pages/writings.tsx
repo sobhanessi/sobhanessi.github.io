@@ -5,11 +5,10 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import WritingsTiles from "./components/WritingsTiles";
 
-function writings() {
+function writings(): JSX.Element {
   return (
     <>
       <Navbar />
-
       <Container
         maxWidth="xl"
         sx={{

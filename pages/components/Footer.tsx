@@ -4,7 +4,7 @@ import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-function Footer() {
+function Footer(): JSX.Element {
   const year = new Date().getUTCFullYear();
 
   return (

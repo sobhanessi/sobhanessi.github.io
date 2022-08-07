@@ -88,7 +88,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
