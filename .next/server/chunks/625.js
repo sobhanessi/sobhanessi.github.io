@@ -49,7 +49,7 @@ var theme = __webpack_require__(3018);
 // I need to move to graphql
 const NewsTiles = ()=>{
     const newsDivert = (href)=>{
-    // console.log(href);
+        console.log(href);
     // inja bayad redirect konam be page morede nazar.
     };
     return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {

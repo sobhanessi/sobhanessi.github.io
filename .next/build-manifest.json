@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/wsEAEci63sK-rP9phtGER/_buildManifest.js",
-    "static/wsEAEci63sK-rP9phtGER/_ssgManifest.js"
+    "static/u2yycJ8NpPFKLDEofRnRv/_buildManifest.js",
+    "static/u2yycJ8NpPFKLDEofRnRv/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -18,7 +18,7 @@
       "static/chunks/881-2fdf377506b866fc.js",
       "static/chunks/274-7ac8c34c859ffeca.js",
       "static/chunks/654-46b3b1152ad0dda9.js",
-      "static/chunks/pages/index-86ace5d2d5c87d6b.js"
+      "static/chunks/pages/index-4d55842241814dd1.js"
     ],
     "/_app": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
@@ -46,7 +46,7 @@
       "static/chunks/main-aff9f5cd95c9bd16.js",
       "static/chunks/372-6193faa6d14d2a44.js",
       "static/chunks/274-7ac8c34c859ffeca.js",
-      "static/chunks/pages/components/Footer-e43f59f09e4b6e8d.js"
+      "static/chunks/pages/components/Footer-e7da0f4a5fc46c55.js"
     ],
     "/components/Jobs": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
@@ -71,7 +71,7 @@
       "static/chunks/main-aff9f5cd95c9bd16.js",
       "static/chunks/372-6193faa6d14d2a44.js",
       "static/chunks/881-2fdf377506b866fc.js",
-      "static/chunks/pages/components/NewsTiles-aa51bbe7db72b6f1.js"
+      "static/chunks/pages/components/NewsTiles-39bae69fbcc2b0a6.js"
     ],
     "/components/SubNews": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
@@ -85,7 +85,7 @@
       "static/chunks/main-aff9f5cd95c9bd16.js",
       "static/chunks/372-6193faa6d14d2a44.js",
       "static/chunks/881-2fdf377506b866fc.js",
-      "static/chunks/pages/components/WritingsTiles-a1e25fbe3c7eb22e.js"
+      "static/chunks/pages/components/WritingsTiles-c60a567573393c5f.js"
     ],
     "/fahimeh": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
@@ -101,7 +101,7 @@
       "static/chunks/881-2fdf377506b866fc.js",
       "static/chunks/274-7ac8c34c859ffeca.js",
       "static/chunks/654-46b3b1152ad0dda9.js",
-      "static/chunks/pages/news-c9d0f64f17a028af.js"
+      "static/chunks/pages/news-964e5bf1b0072ad6.js"
     ],
     "/writings": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
@@ -111,7 +111,7 @@
       "static/chunks/881-2fdf377506b866fc.js",
       "static/chunks/274-7ac8c34c859ffeca.js",
       "static/chunks/654-46b3b1152ad0dda9.js",
-      "static/chunks/pages/writings-6e90f7cc502766b9.js"
+      "static/chunks/pages/writings-febaa236bcece5a1.js"
     ]
   },
   "ampFirstPages": []
