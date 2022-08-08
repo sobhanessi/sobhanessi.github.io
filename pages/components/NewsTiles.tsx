@@ -7,7 +7,7 @@ import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
 
 const NewsTiles = (): JSX.Element => {
   const newsDivert = (href: string): void => {
-    // console.log(href);
+    console.log(href);
     // inja bayad redirect konam be page morede nazar.
   };
   return (
