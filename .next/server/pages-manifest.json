@@ -1,17 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/components/Aboutme": "pages/components/Aboutme.html",
-  "/components/Footer": "pages/components/Footer.html",
-  "/components/Jobs": "pages/components/Jobs.html",
-  "/components/Navbar": "pages/components/Navbar.html",
-  "/components/NewsTiles": "pages/components/NewsTiles.html",
-  "/components/SubNews": "pages/components/SubNews.html",
-  "/components/WritingsTiles": "pages/components/WritingsTiles.html",
-  "/fahimeh": "pages/fahimeh.html",
-  "/": "pages/index.html",
-  "/news": "pages/news.html",
-  "/writings": "pages/writings.html",
-  "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/_document": "pages/_document.js"
 }
