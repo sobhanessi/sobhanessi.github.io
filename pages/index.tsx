@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 // felan pak sazi kardam va jahayi ke kharab shode bood ro dorost kardam taghriban.
 // faghat moonde matn, ke unam bayad dobare az aval benevisam.
 
-export default function Portfolio(): JSX.Element {
+export default function Index(): JSX.Element {
   return (
     <>
       <Navbar />

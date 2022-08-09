@@ -5,7 +5,7 @@ import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
 import Navbar from "./components/Navbar";
 import NewsTiles from "./components/NewsTiles";
 
-const News = (): JSX.Element => {
+export default function News(): JSX.Element {
   return (
     <>
       <Navbar />
@@ -25,6 +25,4 @@ const News = (): JSX.Element => {
       <Footer />
     </>
   );
-};
-
-export default News;
+}
