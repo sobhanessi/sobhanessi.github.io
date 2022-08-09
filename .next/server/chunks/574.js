@@ -202,7 +202,7 @@ function Navbar() {
                                             children: title.header
                                         })
                                     ]
-                                }))
+                                }, title.header))
                         })
                     ]
                 })
