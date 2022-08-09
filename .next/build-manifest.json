@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/g0uxHGR9dwL3cdXDba254/_buildManifest.js",
-    "static/g0uxHGR9dwL3cdXDba254/_ssgManifest.js"
+    "static/Kr_sHkivBWcjTcPxWRfp4/_buildManifest.js",
+    "static/Kr_sHkivBWcjTcPxWRfp4/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -71,7 +71,7 @@
       "static/chunks/main-aff9f5cd95c9bd16.js",
       "static/chunks/372-6193faa6d14d2a44.js",
       "static/chunks/881-2fdf377506b866fc.js",
-      "static/chunks/pages/components/NewsTiles-dc261b4a449a5423.js"
+      "static/chunks/pages/components/NewsTiles-21f25fa7b9dfb0cd.js"
     ],
     "/components/SubNews": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
@@ -101,7 +101,7 @@
       "static/chunks/881-2fdf377506b866fc.js",
       "static/chunks/274-7ac8c34c859ffeca.js",
       "static/chunks/654-46b3b1152ad0dda9.js",
-      "static/chunks/pages/news-12444f8d603660e1.js"
+      "static/chunks/pages/news-ae63fb558a63cea8.js"
     ],
     "/writings": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
