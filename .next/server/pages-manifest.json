@@ -10,8 +10,8 @@
   "/components/WritingsTiles": "pages/components/WritingsTiles.html",
   "/fahimeh": "pages/fahimeh.html",
   "/": "pages/index.html",
-  "/news": "pages/news.html",
   "/writings": "pages/writings.html",
+  "/news": "pages/news.html",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }

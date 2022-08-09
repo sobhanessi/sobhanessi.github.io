@@ -135,6 +135,7 @@ export default function Navbar(): JSX.Element {
                 component="a"
                 href={title.href}
                 sx={{ ...NAVBAR_APPBAR_TYPOGRAPHY, color: SECONDARY_COLOR }}
+                key={title.header}
               >
                 <span
                   style={{
