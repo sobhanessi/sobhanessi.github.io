@@ -3,15 +3,12 @@ import {
   Avatar,
   Card,
   CardContent,
-  CardHeader,
   CardMedia,
-  Container,
   Grid,
   Typography,
 } from "@mui/material";
 import news from "../../public/database/news";
 import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
-import { createTheme, styled } from "@mui/material/styles";
 
 // I need to move to graphql
 
@@ -20,41 +17,6 @@ const NewsTiles = (): JSX.Element => {
     console.log(href);
     // inja bayad redirect konam be page morede nazar.
   };
-
-  const theme = createTheme({
-    breakpoints: {
-      values: {
-        xs: 0,
-        sm: 600,
-        md: 900,
-        lg: 1200,
-        xl: 1536,
-      },
-    },
-  });
-
-  const Root = styled("div")(() => ({
-    [theme.breakpoints.up("xl")]: {
-      height: 225,
-      width: 225,
-    },
-    [theme.breakpoints.up("lg")]: {
-      height: 225,
-      width: 225,
-    },
-    [theme.breakpoints.up("md")]: {
-      height: 225,
-      width: 225,
-    },
-    [theme.breakpoints.up("sm")]: {
-      height: 225,
-      width: 225,
-    },
-    [theme.breakpoints.down("xs")]: {
-      height: 225,
-      width: 225,
-    },
-  }));
 
   return (
     <>
@@ -84,7 +46,7 @@ const NewsTiles = (): JSX.Element => {
                     sx={[
                       {
                         height: 225,
-                        width: 225,
+                        width: "100%",
                         borderRadius: 5,
                         mb: 2,
                       },
