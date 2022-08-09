@@ -30,7 +30,7 @@ const NewsTiles = (): JSX.Element => {
             }}
             onClick={() => newsDivert(n.href)}
           >
-            <Grid container xs={12} sx={{ mb: 4 }}>
+            <Grid container sx={{ mb: 4 }}>
               <Grid item xs={12} sm={5} md={4} lg={4} xl={4}>
                 <CardMedia
                   sx={{

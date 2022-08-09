@@ -63,7 +63,6 @@ const NewsTiles = ()=>{
                     onClick: ()=>newsDivert(n.href),
                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Grid, {
                         container: true,
-                        xs: 12,
                         sx: {
                             mb: 4
                         },
