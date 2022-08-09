@@ -1,7 +1,17 @@
-import { Avatar, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import {
+  Avatar,
+  Card,
+  CardContent,
+  CardHeader,
+  CardMedia,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
 import news from "../../public/database/news";
 import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
+import { createTheme, styled } from "@mui/material/styles";
 
 // I need to move to graphql
 
@@ -10,44 +20,91 @@ const NewsTiles = (): JSX.Element => {
     console.log(href);
     // inja bayad redirect konam be page morede nazar.
   };
+
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 600,
+        md: 900,
+        lg: 1200,
+        xl: 1536,
+      },
+    },
+  });
+
+  const Root = styled("div")(() => ({
+    [theme.breakpoints.up("xl")]: {
+      height: 225,
+      width: 225,
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: 225,
+      width: 225,
+    },
+    [theme.breakpoints.up("md")]: {
+      height: 225,
+      width: 225,
+    },
+    [theme.breakpoints.up("sm")]: {
+      height: 225,
+      width: 225,
+    },
+    [theme.breakpoints.down("xs")]: {
+      height: 225,
+      width: 225,
+    },
+  }));
+
   return (
     <>
-      <Container>
-        {news.map((n) => (
-          <>
-            <Card
-              sx={{ bgcolor: MAIN_COLOR }}
-              onClick={() => newsDivert(n.href)}
-            >
-              <Grid container xs={12} sx={{ mb: 4 }}>
-                <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
+      {news.map((n) => (
+        <>
+          <Card
+            sx={{
+              bgcolor: MAIN_COLOR,
+              boxShadow: 0,
+              width: "100%",
+            }}
+            onClick={() => newsDivert(n.href)}
+          >
+            <Grid container xs={12} sx={{ mb: 4 }}>
+              <Grid item xs={12} sm={5} md={4} lg={4} xl={4}>
+                <CardMedia
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   <Avatar
                     src={n.headerImage}
                     alt={n.title}
                     variant="square"
-                    sx={{
-                      height: 225,
-                      width: 225,
-                      borderRadius: "25px",
-                      display: "flex",
-                      mb: 2,
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
+                    sx={[
+                      {
+                        height: 225,
+                        width: 225,
+                        borderRadius: 5,
+                        mb: 2,
+                      },
+                    ]}
                   />
-                </Grid>
-                <Grid
-                  item
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                  xl={8}
-                  lg={8}
-                  md={8}
-                  sm={8}
-                  xs={12}
-                >
+                </CardMedia>
+              </Grid>
+              <Grid
+                item
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+                xl={8}
+                lg={8}
+                md={8}
+                sm={6}
+                xs={12}
+              >
+                <CardContent>
                   <Typography
                     variant="h5"
                     component="div"
@@ -80,13 +137,13 @@ const NewsTiles = (): JSX.Element => {
                   >
                     {n.brief}
                   </Typography>
-                </Grid>
-                <hr style={{ color: "white", width: "100%" }} />
+                </CardContent>
               </Grid>
-            </Card>
-          </>
-        ))}
-      </Container>
+              <hr style={{ color: "white", width: "100%" }} />
+            </Grid>
+          </Card>
+        </>
+      ))}
     </>
   );
 };
