@@ -53,119 +53,117 @@ const NewsTiles = ()=>{
     // inja bayad redirect konam be page morede nazar.
     };
     return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: database_news.map((n)=>/*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-                children: /*#__PURE__*/ jsx_runtime_.jsx(material_.Card, {
+        children: database_news.map((n)=>/*#__PURE__*/ jsx_runtime_.jsx(material_.Card, {
+                sx: {
+                    bgcolor: theme/* MAIN_COLOR */.lU,
+                    boxShadow: 0,
+                    width: "100%"
+                },
+                onClick: ()=>newsDivert(n.href),
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Grid, {
+                    container: true,
                     sx: {
-                        bgcolor: theme/* MAIN_COLOR */.lU,
-                        boxShadow: 0,
-                        width: "100%"
+                        mb: 4
                     },
-                    onClick: ()=>newsDivert(n.href),
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Grid, {
-                        container: true,
-                        sx: {
-                            mb: 4
-                        },
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(material_.Grid, {
-                                item: true,
-                                xs: 12,
-                                sm: 5,
-                                md: 4,
-                                lg: 4,
-                                xl: 4,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(material_.CardMedia, {
-                                    sx: {
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        alignItems: "center"
-                                    },
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(material_.Avatar, {
-                                        src: n.headerImage,
-                                        alt: n.title,
-                                        variant: "square",
-                                        sx: [
-                                            {
-                                                height: 225,
-                                                width: "100%",
-                                                borderRadius: 5,
-                                                mb: 2
-                                            }, 
-                                        ]
-                                    })
-                                })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(material_.Grid, {
-                                item: true,
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Grid, {
+                            item: true,
+                            xs: 12,
+                            sm: 5,
+                            md: 4,
+                            lg: 4,
+                            xl: 4,
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(material_.CardMedia, {
                                 sx: {
                                     display: "flex",
-                                    flexDirection: "column"
+                                    justifyContent: "center",
+                                    alignItems: "center"
                                 },
-                                xl: 8,
-                                lg: 8,
-                                md: 8,
-                                sm: 6,
-                                xs: 12,
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.CardContent, {
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
-                                            variant: "h5",
-                                            component: "div",
-                                            color: "#ff6266",
-                                            gutterBottom: true,
-                                            sx: {
-                                                fontFamily: theme/* FONT_FAMILY */.ut,
-                                                fontWeight: "bold"
-                                            },
-                                            children: n.title
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
-                                            component: "div",
-                                            color: "#f79d2e",
-                                            gutterBottom: true,
-                                            sx: {
-                                                fontFamily: theme/* FONT_FAMILY */.ut
-                                            },
-                                            children: n.date
-                                        }),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
-                                            component: "div",
-                                            color: "#2e5aeb",
-                                            gutterBottom: true,
-                                            sx: {
-                                                fontFamily: theme/* FONT_FAMILY */.ut
-                                            },
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    style: {
-                                                        color: "white"
-                                                    },
-                                                    children: "Author : "
-                                                }),
-                                                n.author
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
-                                            gutterBottom: true,
-                                            sx: {
-                                                color: "white",
-                                                fontFamily: theme/* FONT_FAMILY */.ut
-                                            },
-                                            children: n.brief
-                                        })
+                                children: /*#__PURE__*/ jsx_runtime_.jsx(material_.Avatar, {
+                                    src: n.headerImage,
+                                    alt: n.title,
+                                    variant: "square",
+                                    sx: [
+                                        {
+                                            height: 225,
+                                            width: "100%",
+                                            borderRadius: 5,
+                                            mb: 2
+                                        }, 
                                     ]
                                 })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("hr", {
-                                style: {
-                                    color: "white",
-                                    width: "100%"
-                                }
+                            }, n.title)
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Grid, {
+                            item: true,
+                            sx: {
+                                display: "flex",
+                                flexDirection: "column"
+                            },
+                            xl: 8,
+                            lg: 8,
+                            md: 8,
+                            sm: 6,
+                            xs: 12,
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.CardContent, {
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
+                                        variant: "h5",
+                                        component: "div",
+                                        color: "#ff6266",
+                                        gutterBottom: true,
+                                        sx: {
+                                            fontFamily: theme/* FONT_FAMILY */.ut,
+                                            fontWeight: "bold"
+                                        },
+                                        children: n.title
+                                    }, n.title + n.date),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
+                                        component: "div",
+                                        color: "#f79d2e",
+                                        gutterBottom: true,
+                                        sx: {
+                                            fontFamily: theme/* FONT_FAMILY */.ut
+                                        },
+                                        children: n.date
+                                    }, n.date + n.author),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
+                                        component: "div",
+                                        color: "#2e5aeb",
+                                        gutterBottom: true,
+                                        sx: {
+                                            fontFamily: theme/* FONT_FAMILY */.ut
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                style: {
+                                                    color: "white"
+                                                },
+                                                children: "Author : "
+                                            }),
+                                            n.author
+                                        ]
+                                    }, n.date + n.title),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
+                                        gutterBottom: true,
+                                        sx: {
+                                            color: "white",
+                                            fontFamily: theme/* FONT_FAMILY */.ut
+                                        },
+                                        children: n.brief
+                                    })
+                                ]
                             })
-                        ]
-                    })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("hr", {
+                            style: {
+                                color: "white",
+                                width: "100%"
+                            }
+                        })
+                    ]
                 })
-            }))
+            }, n.title))
     });
 };
 /* harmony default export */ const components_NewsTiles = (NewsTiles);
