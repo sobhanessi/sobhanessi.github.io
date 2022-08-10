@@ -5,7 +5,7 @@ import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
 import Navbar from "./components/Navbar";
 import NewsTiles from "./components/NewsTiles";
 
-export default function News(): JSX.Element {
+export default function news(): JSX.Element {
   return (
     <>
       <Navbar />
