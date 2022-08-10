@@ -57,6 +57,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mui_icons_material_Phone__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Phone__WEBPACK_IMPORTED_MODULE_22__);
 /* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(8442);
 /* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_mui_material_styles__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_24__);
 
 
 
@@ -75,6 +77,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // import ListItemIcon from "@mui/material/ListItemIcon";
+
 
 
 
@@ -179,29 +182,32 @@ function Navbar() {
                                 flexDirection: "row",
                                 justifyContent: "center"
                             },
-                            children: titles.map((title)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_21___default()), {
-                                    // variant="p"
-                                    noWrap: true,
-                                    component: "a",
+                            children: titles.map((title)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_24___default()), {
                                     href: title.href,
-                                    sx: {
-                                        ..._public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .NAVBAR_APPBAR_TYPOGRAPHY */ .np,
-                                        color: _public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .SECONDARY_COLOR */ .Vz
-                                    },
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                            style: {
-                                                marginRight: "10px",
-                                                display: "flex",
-                                                alignItems: "center",
-                                                color: _public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .QUATERNARY_COLOR */ .W2
-                                            },
-                                            children: title.icon
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                            children: title.header
-                                        })
-                                    ]
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_21___default()), {
+                                        // variant="p"
+                                        noWrap: true,
+                                        href: title.header,
+                                        component: "a",
+                                        sx: {
+                                            ..._public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .NAVBAR_APPBAR_TYPOGRAPHY */ .np,
+                                            color: _public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .SECONDARY_COLOR */ .Vz
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                style: {
+                                                    marginRight: "10px",
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    color: _public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .QUATERNARY_COLOR */ .W2
+                                                },
+                                                children: title.icon
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                children: title.header
+                                            })
+                                        ]
+                                    }, title.header)
                                 }, title.header))
                         })
                     ]

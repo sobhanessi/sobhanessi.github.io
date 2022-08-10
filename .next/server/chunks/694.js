@@ -109,7 +109,6 @@ function Jobs() {
     return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
         children: database_jobs.map((job)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Grid, {
                 container: true,
-                xs: 12,
                 sx: {
                     mb: 4
                 },
@@ -134,8 +133,8 @@ function Jobs() {
                                 justifyContent: "center",
                                 alignItems: "center"
                             }
-                        })
-                    }),
+                        }, job.title)
+                    }, job.period),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Grid, {
                         item: true,
                         sx: {
@@ -157,7 +156,7 @@ function Jobs() {
                                     fontFamily: theme/* FONT_FAMILY */.ut
                                 },
                                 children: job.title
-                            }),
+                            }, job.title),
                             /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
                                 component: "div",
                                 color: "#f79d2e",
@@ -166,7 +165,7 @@ function Jobs() {
                                     fontFamily: theme/* FONT_FAMILY */.ut
                                 },
                                 children: job.period
-                            }),
+                            }, job.period),
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                 component: "div",
                                 color: "#2e5aeb",
@@ -178,16 +177,17 @@ function Jobs() {
                                     "Type of contract : ",
                                     job.contractType
                                 ]
-                            }),
+                            }, job.title + job.period),
                             /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
                                 gutterBottom: true,
                                 sx: {
                                     color: "white"
                                 },
+                                title: job.title + job.period + job.contractType,
                                 children: job.description
                             })
                         ]
-                    }),
+                    }, job.contractType),
                     /*#__PURE__*/ jsx_runtime_.jsx("hr", {
                         style: {
                             color: "white",
@@ -195,7 +195,7 @@ function Jobs() {
                         }
                     })
                 ]
-            }))
+            }, job.title))
     });
 }
 /* harmony default export */ const components_Jobs = (Jobs);

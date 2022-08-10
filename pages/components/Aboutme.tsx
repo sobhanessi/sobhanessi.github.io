@@ -7,10 +7,14 @@ function Aboutme(): JSX.Element {
   return (
     <>
       {aboutme?.map((am) => (
-        <>
-          <Grid container sx={{ display: "flex", flexDirection: "row" }}>
+        <div key={am.title}>
+          <Grid
+            container
+            sx={{ display: "flex", flexDirection: "row" }}
+            key={am.title}
+          >
             {am.left && (
-              <Grid item sm={1} xs={1} lg={1} xl={1} md={1}>
+              <Grid item sm={1} xs={1} lg={1} xl={1} md={1} key={am.title}>
                 <Box
                   sx={{
                     color: "white",
@@ -21,6 +25,7 @@ function Aboutme(): JSX.Element {
                     alignItems: "center",
                     ml: 3,
                   }}
+                  key={am.title}
                 >
                   <Avatar
                     sx={{
@@ -32,6 +37,7 @@ function Aboutme(): JSX.Element {
                       textAlign: "center",
                       fontFamily: FONT_FAMILY,
                     }}
+                    key={am.title}
                   >
                     {am.title}
                   </Avatar>
@@ -44,7 +50,7 @@ function Aboutme(): JSX.Element {
               </Typography>
             </Grid>
             {am.right && (
-              <Grid item sm={1} xs={1} lg={1} xl={1} md={1}>
+              <Grid item sm={1} xs={1} lg={1} xl={1} md={1} key={am.title}>
                 <Box
                   sx={{
                     color: "white",
@@ -55,6 +61,7 @@ function Aboutme(): JSX.Element {
                     alignItems: "center",
                     ml: 3,
                   }}
+                  key={am.title}
                 >
                   <Avatar
                     sx={{
@@ -66,6 +73,7 @@ function Aboutme(): JSX.Element {
                       textAlign: "center",
                       fontFamily: FONT_FAMILY,
                     }}
+                    key={am.title}
                   >
                     {am.title}
                   </Avatar>
@@ -75,7 +83,7 @@ function Aboutme(): JSX.Element {
           </Grid>
           <br />
           <br />
-        </>
+        </div>
       ))}
     </>
   );
