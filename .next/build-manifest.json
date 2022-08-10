@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/4aVMxc7tdu_sQ99iAr_Fs/_buildManifest.js",
-    "static/4aVMxc7tdu_sQ99iAr_Fs/_ssgManifest.js"
+    "static/1rqAhoEjeNlDk8GQqFaga/_buildManifest.js",
+    "static/1rqAhoEjeNlDk8GQqFaga/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -85,7 +85,13 @@
       "static/chunks/main-7ca0c04a95757ac7.js",
       "static/chunks/372-6193faa6d14d2a44.js",
       "static/chunks/881-2fdf377506b866fc.js",
-      "static/chunks/pages/components/WritingsTiles-3498b1e89175b964.js"
+      "static/chunks/pages/components/WritingsTiles-532008f1fdcf0cd5.js"
+    ],
+    "/contact": [
+      "static/chunks/webpack-fd1bc4a65a80e5c8.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-7ca0c04a95757ac7.js",
+      "static/chunks/pages/contact-583dabdb6b1cb0a6.js"
     ],
     "/fahimeh": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
@@ -111,7 +117,7 @@
       "static/chunks/881-2fdf377506b866fc.js",
       "static/chunks/274-7ac8c34c859ffeca.js",
       "static/chunks/654-46b3b1152ad0dda9.js",
-      "static/chunks/pages/writings-70a1b882277bad6f.js"
+      "static/chunks/pages/writings-f0b3ce8cc7040e7b.js"
     ]
   },
   "ampFirstPages": []

@@ -22,12 +22,14 @@ app.prepare().then(() => {
     })
   );
 
+  server.get("/writings", (req, res) => {
+    return app.render(req, res, "/writings");
+  });
   server.get("/news", (req, res) => {
     return app.render(req, res, "/news");
   });
-
-  server.get("/writings", (req, res) => {
-    return app.render(req, res, "/writings");
+  server.get("/contact", (req, res) => {
+    return app.render(req, res, "/contact");
   });
 
   server.get("*", (req, res) => {
