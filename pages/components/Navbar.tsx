@@ -34,7 +34,7 @@ import Link from "next/link";
 const drawerWidth = 240;
 
 const titles = [
-  { header: "NEWS", href: "/computerNews", icon: <NewsPaperIcon /> },
+  { header: "NEWS", href: "/news", icon: <NewsPaperIcon /> },
   { header: "PORTFOLIO/ABOUT", href: "/", icon: <AccountBoxIcon /> },
   { header: "WRITINGS", href: "/writings", icon: <BorderColorIcon /> },
   { header: "CONTACT", href: "/contact", icon: <PhoneIcon /> },

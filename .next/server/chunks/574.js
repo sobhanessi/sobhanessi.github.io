@@ -89,7 +89,7 @@ const drawerWidth = 240;
 const titles = [
     {
         header: "NEWS",
-        href: "/computerNews",
+        href: "/news",
         icon: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_Newspaper__WEBPACK_IMPORTED_MODULE_19___default()), {})
     },
     {
