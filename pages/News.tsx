@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import Footer from "./components/Footer";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
 import Navbar from "./components/Navbar";
@@ -20,7 +20,8 @@ export default function news(): JSX.Element {
           pt: 10,
         }}
       >
-        <NewsTiles />
+        {/* <NewsTiles /> */}
+        <p>hello world.</p>
       </Container>
       <Footer />
     </>
