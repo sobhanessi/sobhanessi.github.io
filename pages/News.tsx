@@ -1,11 +1,10 @@
 import React from "react";
-import { Container, Typography } from "@mui/material";
-import Footer from "./components/Footer";
+import { Container } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import NewsTiles from "./components/NewsTiles";
 
-export default function news(): JSX.Element {
+function news() {
   return (
     <>
       <Navbar />
@@ -27,3 +26,5 @@ export default function news(): JSX.Element {
     </>
   );
 }
+
+export default news;

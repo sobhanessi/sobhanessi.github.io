@@ -226,7 +226,7 @@ var theme = __webpack_require__(3018);
 
 function Aboutme() {
     return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: database_aboutme?.map((am)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: database_aboutme?.map((am)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Grid, {
                         container: true,
@@ -263,9 +263,9 @@ function Aboutme() {
                                             fontFamily: theme/* FONT_FAMILY */.ut
                                         },
                                         children: am.title
-                                    })
-                                })
-                            }),
+                                    }, am.title)
+                                }, am.title)
+                            }, am.title),
                             /*#__PURE__*/ jsx_runtime_.jsx(material_.Grid, {
                                 item: true,
                                 sm: 8,
@@ -310,15 +310,15 @@ function Aboutme() {
                                             fontFamily: theme/* FONT_FAMILY */.ut
                                         },
                                         children: am.title
-                                    })
-                                })
-                            })
+                                    }, am.title)
+                                }, am.title)
+                            }, am.title)
                         ]
-                    }),
+                    }, am.title),
                     /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                     /*#__PURE__*/ jsx_runtime_.jsx("br", {})
                 ]
-            }))
+            }, am.title))
     });
 }
 /* harmony default export */ const components_Aboutme = (Aboutme);

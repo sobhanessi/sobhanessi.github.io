@@ -29,6 +29,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { styled, useTheme } from "@mui/material/styles";
+import Link from "next/link";
 
 const drawerWidth = 240;
 
@@ -129,26 +130,28 @@ export default function Navbar(): JSX.Element {
             }}
           >
             {titles.map((title) => (
-              <Typography
-                // variant="p"
-                noWrap
-                component="a"
-                href={title.href}
-                sx={{ ...NAVBAR_APPBAR_TYPOGRAPHY, color: SECONDARY_COLOR }}
-                key={title.header}
-              >
-                <span
-                  style={{
-                    marginRight: "10px",
-                    display: "flex",
-                    alignItems: "center",
-                    color: QUATERNARY_COLOR,
-                  }}
+              <Link href={title.href} key={title.header}>
+                <Typography
+                  // variant="p"
+                  noWrap
+                  href={title.header}
+                  component="a"
+                  sx={{ ...NAVBAR_APPBAR_TYPOGRAPHY, color: SECONDARY_COLOR }}
+                  key={title.header}
                 >
-                  {title.icon}
-                </span>
-                <span>{title.header}</span>
-              </Typography>
+                  <span
+                    style={{
+                      marginRight: "10px",
+                      display: "flex",
+                      alignItems: "center",
+                      color: QUATERNARY_COLOR,
+                    }}
+                  >
+                    {title.icon}
+                  </span>
+                  <span>{title.header}</span>
+                </Typography>
+              </Link>
             ))}
           </Container>
         </Toolbar>
