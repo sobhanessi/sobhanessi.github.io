@@ -95,7 +95,7 @@ const NewsTiles = (): JSX.Element => {
                   key={n.date + n.title}
                 >
                   <span style={{ color: "white" }}>Author : </span>
-                  {n.author}
+                  <span style={{ fontWeight: "bold" }}>{n.author}</span>
                 </Typography>
                 <Typography
                   gutterBottom

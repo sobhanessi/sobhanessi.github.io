@@ -77,7 +77,7 @@ function WritingsTiles(): JSX.Element {
                   component="div"
                   color="#f79d2e"
                   gutterBottom
-                  sx={{ fontFamily: FONT_FAMILY }}
+                  sx={{ fontFamily: FONT_FAMILY, fontWeight: "bold" }}
                 >
                   {n.date}
                 </Typography>
@@ -88,7 +88,7 @@ function WritingsTiles(): JSX.Element {
                   sx={{ fontFamily: FONT_FAMILY }}
                 >
                   <span style={{ color: "white" }}>Author : </span>
-                  {n.author}
+                  <span style={{ fontWeight: "bold" }}>{n.author}</span>
                 </Typography>
                 <Typography
                   gutterBottom

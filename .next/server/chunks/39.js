@@ -25,16 +25,20 @@ var theme = __webpack_require__(3018);
 ;// CONCATENATED MODULE: ./public/database/writings.js
 const writings = [
     {
-        title: "first header",
-        href: "/hello-world",
-        slug: "be to che",
+        title: "First writing in the new format of my website!",
+        href: "/writings/hello-world!",
+        slug: "hello-world!",
         date: "10/7/2022",
         author: "Sobhan Esfandyari",
         category: [
-            "software"
+            "Life"
         ],
-        brief: "this will be a brief about the news that will be published on my website.",
-        text: "here will be the long text that will be published on its own page when the user clicks on it.",
+        brief: "In this page you can find my writings about all stuff that I faced everyday in my life!",
+        text: `Why am I writing? Short answer, because I like it.<br/>
+    However there are some lacks in writing skills and there is also language barrier here as well, 
+    I might not be a good writer but I can publish some of the things that I have faced my entire life for other people who enjoys it.
+    <br/>
+    I hope these writings find you as well and you learn also something from me, or even me from you!`,
         headerImage: "/pics/sobhanessi.jpg"
     }, 
 ];
@@ -122,7 +126,8 @@ function WritingsTiles() {
                                         color: "#f79d2e",
                                         gutterBottom: true,
                                         sx: {
-                                            fontFamily: theme/* FONT_FAMILY */.ut
+                                            fontFamily: theme/* FONT_FAMILY */.ut,
+                                            fontWeight: "bold"
                                         },
                                         children: n.date
                                     }),
@@ -140,7 +145,12 @@ function WritingsTiles() {
                                                 },
                                                 children: "Author : "
                                             }),
-                                            n.author
+                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                style: {
+                                                    fontWeight: "bold"
+                                                },
+                                                children: n.author
+                                            })
                                         ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
