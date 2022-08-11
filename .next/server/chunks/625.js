@@ -23,8 +23,8 @@ var material_ = __webpack_require__(5692);
 ;// CONCATENATED MODULE: ./public/database/news.js
 const news = [
     {
-        title: "First news of the new website!",
-        href: "/hello-world!",
+        title: "First news of the new format of my website!",
+        href: "/news/hello-world!",
         slug: "hello world!",
         date: "10/7/2022",
         author: "Sobhan Esfandyari",
@@ -147,7 +147,12 @@ const NewsTiles = ()=>{
                                                 },
                                                 children: "Author : "
                                             }),
-                                            n.author
+                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                style: {
+                                                    fontWeight: "bold"
+                                                },
+                                                children: n.author
+                                            })
                                         ]
                                     }, n.date + n.title),
                                     /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {

@@ -1,7 +1,7 @@
 const news = [
   {
-    title: "First news of the new website!",
-    href: "/hello-world!",
+    title: "First news of the new format of my website!",
+    href: "/news/hello-world!",
     slug: "hello world!",
     date: "10/7/2022",
     author: "Sobhan Esfandyari",

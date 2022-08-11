@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/9H6ipwtY2TDkuK4sIhxLD/_buildManifest.js",
-    "static/9H6ipwtY2TDkuK4sIhxLD/_ssgManifest.js"
+    "static/IfJBWopwkHuENcf8FRSQb/_buildManifest.js",
+    "static/IfJBWopwkHuENcf8FRSQb/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -71,7 +71,7 @@
       "static/chunks/main-7ca0c04a95757ac7.js",
       "static/chunks/372-6193faa6d14d2a44.js",
       "static/chunks/881-2fdf377506b866fc.js",
-      "static/chunks/pages/components/NewsTiles-7922cb045e354552.js"
+      "static/chunks/pages/components/NewsTiles-4ce219f820f871f9.js"
     ],
     "/components/SubNews": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
@@ -85,7 +85,7 @@
       "static/chunks/main-7ca0c04a95757ac7.js",
       "static/chunks/372-6193faa6d14d2a44.js",
       "static/chunks/881-2fdf377506b866fc.js",
-      "static/chunks/pages/components/WritingsTiles-532008f1fdcf0cd5.js"
+      "static/chunks/pages/components/WritingsTiles-69c9ac36e35f21b6.js"
     ],
     "/contact": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
@@ -110,7 +110,7 @@
       "static/chunks/881-2fdf377506b866fc.js",
       "static/chunks/274-7ac8c34c859ffeca.js",
       "static/chunks/739-5a27113a493d3000.js",
-      "static/chunks/pages/news-f29dfd8e785af91d.js"
+      "static/chunks/pages/news-7ff7237cfb5475f0.js"
     ],
     "/writings": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
@@ -120,7 +120,7 @@
       "static/chunks/881-2fdf377506b866fc.js",
       "static/chunks/274-7ac8c34c859ffeca.js",
       "static/chunks/739-5a27113a493d3000.js",
-      "static/chunks/pages/writings-0c7c57c8fd241207.js"
+      "static/chunks/pages/writings-59daf220db744505.js"
     ]
   },
   "ampFirstPages": []
