@@ -82,7 +82,7 @@ const NewsTiles = (): JSX.Element => {
                   component="div"
                   color="#f79d2e"
                   gutterBottom
-                  sx={{ fontFamily: FONT_FAMILY }}
+                  sx={{ fontFamily: FONT_FAMILY, fontWeight: "bold" }}
                   key={n.date + n.author}
                 >
                   {n.date}
