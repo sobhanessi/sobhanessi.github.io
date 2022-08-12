@@ -39,26 +39,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_theme_theme__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(3018);
 /* harmony import */ var _mui_material_List__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(4192);
 /* harmony import */ var _mui_material_List__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_mui_material_List__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _mui_material_ListItem__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(834);
-/* harmony import */ var _mui_material_ListItem__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_mui_material_ListItem__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _mui_material_ListItemButton__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(1011);
-/* harmony import */ var _mui_material_ListItemButton__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_mui_material_ListItemButton__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _mui_material_ListItemText__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(8315);
-/* harmony import */ var _mui_material_ListItemText__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_mui_material_ListItemText__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(3365);
-/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _mui_icons_material_Newspaper__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(2753);
-/* harmony import */ var _mui_icons_material_Newspaper__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Newspaper__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(1431);
-/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(7163);
-/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _mui_icons_material_Phone__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(6872);
-/* harmony import */ var _mui_icons_material_Phone__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Phone__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(8442);
-/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_mui_material_styles__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(1664);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(3365);
+/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _mui_icons_material_Newspaper__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(2753);
+/* harmony import */ var _mui_icons_material_Newspaper__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Newspaper__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(1431);
+/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(7163);
+/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _mui_icons_material_Phone__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(6872);
+/* harmony import */ var _mui_icons_material_Phone__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Phone__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(8442);
+/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_mui_material_styles__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_21__);
 
 
 
@@ -73,10 +67,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-// import ListItemIcon from "@mui/material/ListItemIcon";
 
 
 
@@ -90,7 +80,7 @@ const titles = [
     {
         header: "NEWS",
         href: "/news",
-        icon: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_Newspaper__WEBPACK_IMPORTED_MODULE_19___default()), {})
+        icon: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_Newspaper__WEBPACK_IMPORTED_MODULE_16___default()), {})
     },
     {
         header: "PORTFOLIO/ABOUT",
@@ -105,10 +95,10 @@ const titles = [
     {
         header: "CONTACT",
         href: "/contact",
-        icon: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_Phone__WEBPACK_IMPORTED_MODULE_22___default()), {})
+        icon: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_Phone__WEBPACK_IMPORTED_MODULE_19___default()), {})
     }, 
 ];
-const AppBar = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_23__.styled)((_mui_material_AppBar__WEBPACK_IMPORTED_MODULE_12___default()), {
+const AppBar = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_20__.styled)((_mui_material_AppBar__WEBPACK_IMPORTED_MODULE_12___default()), {
     shouldForwardProp: (prop)=>prop !== "open"
 })(({ theme , open  })=>({
         transition: theme.transitions.create([
@@ -130,7 +120,7 @@ const AppBar = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_23__.styled)((_m
             })
         }
     }));
-const DrawerHeader = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_23__.styled)("div")(({ theme  })=>({
+const DrawerHeader = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_20__.styled)("div")(({ theme  })=>({
         display: "flex",
         alignItems: "center",
         padding: theme.spacing(0, 1),
@@ -139,7 +129,7 @@ const DrawerHeader = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_23__.style
         justifyContent: "flex-end"
     }));
 function Navbar() {
-    const theme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_23__.useTheme)();
+    const theme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_20__.useTheme)();
     const [open, setOpen] = react__WEBPACK_IMPORTED_MODULE_1__.useState(false);
     const handleDrawerOpen = ()=>{
         setOpen(true);
@@ -159,7 +149,7 @@ function Navbar() {
                 sx: {
                     backgroundColor: _public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .MAIN_COLOR */ .lU
                 },
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_20___default()), {
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_17___default()), {
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_11___default()), {
                             color: "inherit",
@@ -170,7 +160,7 @@ function Navbar() {
                                 mr: 2,
                                 display: _public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .NAVBAR_ICON_BUTTON_DISPLAY */ .RA
                             },
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_18___default()), {
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_15___default()), {
                                 sx: {
                                     display: _public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .NAVBAR_ICON_BUTTON_DISPLAY */ .RA
                                 }
@@ -182,9 +172,9 @@ function Navbar() {
                                 flexDirection: "row",
                                 justifyContent: "center"
                             },
-                            children: titles.map((title)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_24___default()), {
+                            children: titles.map((title)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_21___default()), {
                                     href: title.href,
-                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_21___default()), {
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_18___default()), {
                                         // variant="p"
                                         noWrap: true,
                                         href: title.header,
@@ -235,24 +225,32 @@ function Navbar() {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_material_Divider__WEBPACK_IMPORTED_MODULE_9___default()), {}),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_material_List__WEBPACK_IMPORTED_MODULE_14___default()), {
-                        children: titles.map((title)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_material_ListItem__WEBPACK_IMPORTED_MODULE_15___default()), {
-                                disablePadding: true,
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((_mui_material_ListItemButton__WEBPACK_IMPORTED_MODULE_16___default()), {
+                        children: titles.map((title)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_21___default()), {
+                                href: title.href,
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_18___default()), {
+                                    // variant="p"
+                                    noWrap: true,
+                                    href: title.header,
+                                    component: "a",
+                                    sx: {
+                                        ..._public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .NAVBAR_APPBAR_TYPOGRAPHY */ .np,
+                                        color: _public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .SECONDARY_COLOR */ .Vz
+                                    },
                                     children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_21___default()), {
-                                            sx: {
-                                                mr: 1,
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                            style: {
+                                                marginRight: "10px",
                                                 display: "flex",
-                                                alignItems: "center"
+                                                alignItems: "center",
+                                                color: _public_theme_theme__WEBPACK_IMPORTED_MODULE_13__/* .QUATERNARY_COLOR */ .W2
                                             },
                                             children: title.icon
                                         }),
-                                        " ",
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_material_ListItemText__WEBPACK_IMPORTED_MODULE_17___default()), {
-                                            primary: title.header
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                            children: title.header
                                         })
                                     ]
-                                })
+                                }, title.header)
                             }, title.header))
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_material_Divider__WEBPACK_IMPORTED_MODULE_9___default()), {})

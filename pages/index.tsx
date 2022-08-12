@@ -35,13 +35,17 @@ export default function Index(): JSX.Element {
           <Avatar
             alt="Sobhan Esfandyari"
             src="/pics/sobhanessi.jpg"
-            sx={{ width: 192, height: 192, mr: 5 }}
+            sx={{ width: 186, height: 186, mr: 3 }}
           />
           <Box>
             <Typography
-              variant="h4"
+              // variant="h5"
               color="#f79d2e"
-              sx={{ fontFamily: FONT_FAMILY, fontWeight: 700 }}
+              sx={{
+                fontFamily: FONT_FAMILY,
+                fontWeight: 700,
+                fontSize: "1.75rem",
+              }}
             >
               This is "Sobhan Esfandyari" (sobi){" "}
               <span style={{ color: "white" }}>| </span>
@@ -67,7 +71,7 @@ export default function Index(): JSX.Element {
           }}
         >
           <Typography
-            variant="h4"
+            variant="h6"
             component="div"
             // color="#ff6266"
             color="white"

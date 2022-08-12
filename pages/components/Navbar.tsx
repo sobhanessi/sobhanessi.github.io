@@ -19,10 +19,6 @@ import {
   SECONDARY_COLOR,
 } from "../../public/theme/theme";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-// import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import NewsPaperIcon from "@mui/icons-material/Newspaper";
 import Toolbar from "@mui/material/Toolbar";
@@ -182,20 +178,28 @@ export default function Navbar(): JSX.Element {
         <Divider />
         <List>
           {titles.map((title) => (
-            <ListItem key={title.header} disablePadding>
-              <ListItemButton>
-                <Typography
-                  sx={{
-                    mr: 1,
+            <Link href={title.href} key={title.header}>
+              <Typography
+                // variant="p"
+                noWrap
+                href={title.header}
+                component="a"
+                sx={{ ...NAVBAR_APPBAR_TYPOGRAPHY, color: SECONDARY_COLOR }}
+                key={title.header}
+              >
+                <span
+                  style={{
+                    marginRight: "10px",
                     display: "flex",
                     alignItems: "center",
+                    color: QUATERNARY_COLOR,
                   }}
                 >
                   {title.icon}
-                </Typography>{" "}
-                <ListItemText primary={title.header} />
-              </ListItemButton>
-            </ListItem>
+                </span>
+                <span>{title.header}</span>
+              </Typography>
+            </Link>
           ))}
         </List>
         <Divider />
