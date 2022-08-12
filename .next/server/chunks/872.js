@@ -117,7 +117,7 @@ function Aboutme() {
                                         height: "100%",
                                         display: "flex",
                                         alignItems: "center",
-                                        ml: 6
+                                        ml: 3
                                     },
                                     children: /*#__PURE__*/ jsx_runtime_.jsx(material_.Avatar, {
                                         sx: {
@@ -135,13 +135,13 @@ function Aboutme() {
                             }, am.title),
                             /*#__PURE__*/ jsx_runtime_.jsx(material_.Grid, {
                                 item: true,
-                                sm: 8,
-                                xl: 8,
-                                lg: 8,
-                                md: 8,
-                                xs: 8,
+                                sm: 9,
+                                xl: 9,
+                                lg: 9,
+                                md: 9,
+                                xs: 9,
                                 sx: {
-                                    ml: 8
+                                    ml: 6
                                 },
                                 children: /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
                                     color: "white",
@@ -149,7 +149,7 @@ function Aboutme() {
                                     paragraph: true,
                                     fontFamily: theme/* FONT_FAMILY */.ut,
                                     whiteSpace: "pre-line",
-                                    children: am.description.split("<br />").join("\n")
+                                    children: am.description
                                 })
                             })
                         ]
