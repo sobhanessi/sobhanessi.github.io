@@ -1,5 +1,4 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/components/Aboutme": "pages/components/Aboutme.html",
   "/components/Footer": "pages/components/Footer.html",
@@ -13,6 +12,7 @@
   "/": "pages/index.html",
   "/news": "pages/news.html",
   "/writings": "pages/writings.html",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }
