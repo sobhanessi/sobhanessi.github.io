@@ -23,7 +23,7 @@ function Aboutme(): JSX.Element {
                     height: "100%",
                     display: "flex",
                     alignItems: "center",
-                    ml: 6,
+                    ml: 3,
                   }}
                   key={am.title}
                 >
@@ -44,7 +44,7 @@ function Aboutme(): JSX.Element {
                 </Box>
               </Grid>
             )}
-            <Grid item sm={8} xl={8} lg={8} md={8} xs={8} sx={{ ml: 8 }}>
+            <Grid item sm={9} xl={9} lg={9} md={9} xs={9} sx={{ ml: 6 }}>
               <Typography
                 color="white"
                 variant="body1"
@@ -52,7 +52,7 @@ function Aboutme(): JSX.Element {
                 fontFamily={FONT_FAMILY}
                 whiteSpace="pre-line"
               >
-                {am.description.split("<br />").join("\n")}
+                {am.description}
               </Typography>
             </Grid>
             {/* {am.right && (

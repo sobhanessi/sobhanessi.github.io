@@ -105,6 +105,7 @@ function Jobs(): JSX.Element {
                         backgroundColor:
                           skill.name.length > 0 ? "white" : "relative",
                       }}
+                      key={skill.pic}
                     />
                   </Grid>
                 );

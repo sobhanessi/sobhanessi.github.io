@@ -1,7 +1,6 @@
 {
-  "/_error": "pages/_error.js",
-  "/_app": "pages/_app.js",
   "/components/Aboutme": "pages/components/Aboutme.html",
+  "/components/Footer": "pages/components/Footer.html",
   "/components/Jobs": "pages/components/Jobs.html",
   "/components/Navbar": "pages/components/Navbar.html",
   "/components/NewsTiles": "pages/components/NewsTiles.html",
@@ -12,7 +11,8 @@
   "/": "pages/index.html",
   "/news": "pages/news.html",
   "/writings": "pages/writings.html",
-  "/components/Footer": "pages/components/Footer.html",
+  "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }

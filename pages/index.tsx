@@ -35,7 +35,7 @@ export default function Index(): JSX.Element {
           <Avatar
             alt="Sobhan Esfandyari"
             src="/pics/sobhanessi.jpg"
-            sx={{ width: 186, height: 186, mr: 3 }}
+            sx={{ width: 186, height: 186, mr: 1.5 }}
           />
           <Box>
             <Typography

@@ -375,7 +375,7 @@ function Jobs() {
                                                 borderRadius: "20px",
                                                 backgroundColor: skill.name.length > 0 ? "white" : "relative"
                                             }
-                                        })
+                                        }, skill.pic)
                                     });
                                 })
                             })
