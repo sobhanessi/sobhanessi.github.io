@@ -23,17 +23,17 @@ function Aboutme(): JSX.Element {
                     height: "100%",
                     display: "flex",
                     alignItems: "center",
-                    ml: 3,
+                    ml: 6,
                   }}
                   key={am.title}
                 >
                   <Avatar
                     sx={{
-                      width: 92,
-                      height: 92,
-                      ml: -6,
+                      width: 75,
+                      height: 75,
+                      ml: -5,
                       bgcolor: am.color,
-                      fontSize: "16px",
+                      fontSize: "14px",
                       textAlign: "center",
                       fontFamily: FONT_FAMILY,
                     }}
@@ -45,12 +45,28 @@ function Aboutme(): JSX.Element {
               </Grid>
             )}
             <Grid item sm={8} xl={8} lg={8} md={8} xs={8} sx={{ ml: 8 }}>
-              <Typography color="white" fontFamily={FONT_FAMILY}>
-                {am.description}
+              <Typography
+                color="white"
+                variant="body1"
+                paragraph={true}
+                fontFamily={FONT_FAMILY}
+                whiteSpace="pre-line"
+              >
+                {am.description.split("<br />").join("\n")}
               </Typography>
             </Grid>
-            {am.right && (
-              <Grid item sm={1} xs={1} lg={1} xl={1} md={1} key={am.title}>
+            {/* {am.right && (
+              <Grid
+                item
+                sm={1}
+                xs={1}
+                lg={1}
+                xl={1}
+                md={1}
+                key={am.title}
+                ml={0}
+                sx={{ right: 5 }}
+              >
                 <Box
                   sx={{
                     color: "white",
@@ -59,17 +75,17 @@ function Aboutme(): JSX.Element {
                     height: "100%",
                     display: "flex",
                     alignItems: "center",
-                    ml: 3,
+                    left: 95,
                   }}
                   key={am.title}
                 >
                   <Avatar
                     sx={{
-                      width: 92,
-                      height: 92,
-                      ml: 3,
+                      width: 75,
+                      height: 75,
+                      left: 20,
                       bgcolor: am.color,
-                      fontSize: "16px",
+                      fontSize: "14px",
                       textAlign: "center",
                       fontFamily: FONT_FAMILY,
                     }}
@@ -79,7 +95,7 @@ function Aboutme(): JSX.Element {
                   </Avatar>
                 </Box>
               </Grid>
-            )}
+            )} */}
           </Grid>
           <br />
           <br />
