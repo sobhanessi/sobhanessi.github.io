@@ -7,6 +7,20 @@ const jobs = [
     description:
       "I started my new journey in a German company's branch in Greece as Software Engineer to develope and maintain some applications and web applications using variety of languages for this company.",
     image: "covis.png",
+    skills: [
+      { name: "", pic: "/pics/javascript logo.png" },
+      { name: "", pic: "/pics/typescript logo.png" },
+      { name: "", pic: "/pics/nodejs logo 2.png" },
+      { name: "", pic: "/pics/docker logo 2.png" },
+      { name: "", pic: "/pics/mysql logo 2.png" },
+      { name: "mongodb", pic: "/pics/mongodb logo 2.png" },
+      { name: "React", pic: "/pics/react logo 2.png" },
+      // { name: "React Native", pic: "/pics/react logo 2.png" },
+      { name: "redux", pic: "/pics/redux logo 2.png" },
+      { name: "", pic: "/pics/graphql logo 2.png" },
+      { name: "", pic: "/pics/python logo 2.png" },
+      { name: "git", pic: "/pics/git logo 2.png" },
+    ],
   },
   {
     title: "IT and English instructor",
@@ -16,6 +30,15 @@ const jobs = [
     description:
       "English instructor for Farsi speakers in the level of A0 to A2. I also taught here ECDL and CLC but my main focus in teaching was teaching Full Stack Development with Javascript, NodeJS, React, HTML, CSS, MySql, MongoDB and so many other technologies beside my teaching like 'How To Think Like A Programmer' and 'How To Solve Problems'. I have had almost 10 students for each my classes.",
     image: "pytheas path.png",
+    skills: [
+      { name: "", pic: "/pics/javascript logo.png" },
+      { name: "nodejs", pic: "/pics/nodejs logo 2.png" },
+      { name: "", pic: "/pics/mysql logo 2.png" },
+      { name: "mongo", pic: "/pics/mongodb logo 2.png" },
+      { name: "React", pic: "/pics/react logo 2.png" },
+      { name: "", pic: "/pics/python logo 2.png" },
+      { name: "git", pic: "/pics/git logo 2.png" },
+    ],
   },
   {
     title: "Volunteer IT Help Desk",
@@ -25,6 +48,13 @@ const jobs = [
     description:
       "I worked in Solidarity Now as a volunteer IT developer and supporter to help them to manage their services.",
     image: "SolidarityNow.jpg",
+    skills: [
+      { name: "", pic: "/pics/microsoft windows logo.jpg" },
+      { name: "", pic: "/pics/python logo 2.png" },
+
+      { name: "", pic: "/pics/cisco logo.jpg" },
+      { name: "linux", pic: "/pics/linux logo 2.png" },
+    ],
   },
   {
     title: "IT admin",
@@ -34,6 +64,12 @@ const jobs = [
     description:
       "I worked here as IT manager. I was responsible for more than 12 computers including designing the core network and installing and maintaining and optimizing systems for the company.",
     image: "part shamim daru.png",
+    skills: [
+      { name: "", pic: "/pics/microsoft windows logo.jpg" },
+      { name: "WordPress", pic: "/pics/wordpress logo.png" },
+      { name: "linux", pic: "/pics/linux logo 2.png" },
+      { name: "", pic: "/pics/javascript logo.png" },
+    ],
   },
   {
     title: "Content Writer",
@@ -52,6 +88,11 @@ const jobs = [
     description:
       "I was responsible for entire warehouse which for a retail company with outcome of more than 10 tons per month it is more than usual which I digitalised the warehouse system from classic to modern.",
     image: "part shamim daru.png",
+    skills: [
+      { name: "", pic: "/pics/mysql logo 2.png" },
+      { name: "React", pic: "/pics/react logo 2.png" },
+      { name: "", pic: "/pics/graphql logo 2.png" },
+    ],
   },
   {
     title: "Exhibition Coordinator",
@@ -70,6 +111,11 @@ const jobs = [
     description:
       "Bagro was fast food chain restaurant which was located in Tehran and I was responsible for their branches' computers and systems including installing and maintaining. Bagro had more than 4 branches throughout Tehran.",
     image: "bagro fast food.jpg",
+    skills: [
+      { name: "", pic: "/pics/microsoft windows logo.jpg" },
+      { name: "linux", pic: "/pics/linux logo 2.png" },
+      { name: "", pic: "/pics/cisco logo.jpg" },
+    ],
   },
   {
     company: "Faraz Aftab Caspian",
@@ -79,6 +125,12 @@ const jobs = [
     description:
       "Worked as help desk technician. And this job was my first full time job. I was responsible for Kian software which was a software for managing their branch's warehouse and sales management.",
     image: "faraz aftab caspian.jpg",
+    skills: [
+      { name: "", pic: "/pics/microsoft windows logo.jpg" },
+      { name: "linux", pic: "/pics/linux logo 2.png" },
+      // { name: "Kiyan Software", pic: "" },
+      { name: "", pic: "/pics/cisco logo.jpg" },
+    ],
   },
 ];
 

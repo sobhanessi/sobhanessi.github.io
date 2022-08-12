@@ -43,7 +43,7 @@ function Jobs(): JSX.Element {
               component="div"
               color="#ff6266"
               gutterBottom
-              sx={{ fontFamily: FONT_FAMILY }}
+              sx={{ fontFamily: FONT_FAMILY, fontWeight: "bold" }}
               key={job.title}
             >
               {job.title}
@@ -68,11 +68,48 @@ function Jobs(): JSX.Element {
             </Typography>
             <Typography
               gutterBottom
-              sx={{ color: "white" }}
+              sx={{ color: "white", fontFamily: FONT_FAMILY }}
               title={job.title + job.period + job.contractType}
             >
               {job.description}
             </Typography>
+            <Typography
+              gutterBottom
+              sx={{ color: "white", fontFamily: FONT_FAMILY, mt: 4 }}
+              title={job.title + job.period + job.contractType}
+            >
+              Skills that I used or gain in this experience that I had :
+            </Typography>
+
+            <Grid>
+              {job.skills?.map((skill) => {
+                return (
+                  <Grid
+                    item
+                    xl={2}
+                    lg={1.5}
+                    md={2}
+                    sm={2}
+                    xs={2}
+                    sx={{
+                      display: "inline-block",
+                      mr: 1,
+                    }}
+                  >
+                    <Avatar
+                      src={skill.pic}
+                      sx={{
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "20px",
+                        backgroundColor:
+                          skill.name.length > 0 ? "white" : "relative",
+                      }}
+                    />
+                  </Grid>
+                );
+              })}
+            </Grid>
           </Grid>
           <hr style={{ color: "white", width: "100%" }} />
         </Grid>

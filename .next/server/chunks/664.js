@@ -812,6 +812,8 @@ function useIntersection({ rootRef , rootMargin , disabled  }) {
         resetVisible
     ];
 }
+const observers = new Map();
+const idList = [];
 function observe(element, callback, options) {
     const { id , observer , elements  } = createObserver(options);
     elements.set(element, callback);
@@ -830,8 +832,6 @@ function observe(element, callback, options) {
         }
     };
 }
-const observers = new Map();
-const idList = [];
 function createObserver(options) {
     const id = {
         root: options.root || null,
