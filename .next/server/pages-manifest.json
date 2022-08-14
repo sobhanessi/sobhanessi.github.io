@@ -1,18 +1,18 @@
 {
   "/_error": "pages/_error.js",
-  "/_app": "pages/_app.js",
   "/components/Aboutme": "pages/components/Aboutme.html",
   "/components/Footer": "pages/components/Footer.html",
   "/components/Jobs": "pages/components/Jobs.html",
-  "/components/NewsTiles": "pages/components/NewsTiles.html",
   "/components/Navbar": "pages/components/Navbar.html",
   "/components/SubNews": "pages/components/SubNews.html",
+  "/components/NewsTiles": "pages/components/NewsTiles.html",
   "/components/WritingsTiles": "pages/components/WritingsTiles.html",
-  "/": "pages/index.html",
+  "/contact": "pages/contact.html",
   "/fahimeh": "pages/fahimeh.html",
   "/news": "pages/news.html",
+  "/": "pages/index.html",
   "/writings": "pages/writings.html",
-  "/contact": "pages/contact.html",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }

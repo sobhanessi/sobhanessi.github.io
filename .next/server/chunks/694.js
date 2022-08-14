@@ -34,48 +34,51 @@ const jobs = [
         skills: [
             {
                 name: "",
-                pic: "/pics/javascript logo.png"
+                pic: "https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black"
             },
             {
                 name: "",
-                pic: "/pics/typescript logo.png"
+                pic: "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
             },
             {
                 name: "",
-                pic: "/pics/nodejs logo 2.png"
+                pic: "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
             },
             {
                 name: "",
-                pic: "/pics/docker logo 2.png"
+                pic: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"
             },
             {
                 name: "",
-                pic: "/pics/mysql logo 2.png"
-            },
-            {
-                name: "mongodb",
-                pic: "/pics/mongodb logo 2.png"
-            },
-            {
-                name: "React",
-                pic: "/pics/react logo 2.png"
-            },
-            // { name: "React Native", pic: "/pics/react logo 2.png" },
-            {
-                name: "redux",
-                pic: "/pics/redux logo 2.png"
+                pic: "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
             },
             {
                 name: "",
-                pic: "/pics/graphql logo 2.png"
+                pic: "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
             },
             {
                 name: "",
-                pic: "/pics/python logo 2.png"
+                pic: "https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black"
             },
             {
-                name: "git",
-                pic: "/pics/git logo 2.png"
+                name: "",
+                pic: "https://img.shields.io/badge/react_native-61DAFB.svg?style=for-the-badge&logo=react&logoColor=black"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
             }, 
         ]
     },
@@ -89,31 +92,31 @@ const jobs = [
         skills: [
             {
                 name: "",
-                pic: "/pics/javascript logo.png"
-            },
-            {
-                name: "nodejs",
-                pic: "/pics/nodejs logo 2.png"
+                pic: "https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black"
             },
             {
                 name: "",
-                pic: "/pics/mysql logo 2.png"
-            },
-            {
-                name: "mongo",
-                pic: "/pics/mongodb logo 2.png"
-            },
-            {
-                name: "React",
-                pic: "/pics/react logo 2.png"
+                pic: "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
             },
             {
                 name: "",
-                pic: "/pics/python logo 2.png"
+                pic: "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
             },
             {
-                name: "git",
-                pic: "/pics/git logo 2.png"
+                name: "",
+                pic: "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
             }, 
         ]
     },
@@ -127,19 +130,19 @@ const jobs = [
         skills: [
             {
                 name: "",
-                pic: "/pics/microsoft windows logo.jpg"
+                pic: "https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"
             },
             {
                 name: "",
-                pic: "/pics/python logo 2.png"
+                pic: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
             },
             {
                 name: "",
-                pic: "/pics/cisco logo.jpg"
+                pic: "https://img.shields.io/badge/Cisco-1BA0D7.svg?style=for-the-badge&logo=Cisco&logoColor=white"
             },
             {
-                name: "linux",
-                pic: "/pics/linux logo 2.png"
+                name: "",
+                pic: "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
             }, 
         ]
     },
@@ -153,19 +156,19 @@ const jobs = [
         skills: [
             {
                 name: "",
-                pic: "/pics/microsoft windows logo.jpg"
-            },
-            {
-                name: "WordPress",
-                pic: "/pics/wordpress logo.png"
-            },
-            {
-                name: "linux",
-                pic: "/pics/linux logo 2.png"
+                pic: "https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"
             },
             {
                 name: "",
-                pic: "/pics/javascript logo.png"
+                pic: "https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black"
             }, 
         ]
     },
@@ -187,15 +190,15 @@ const jobs = [
         skills: [
             {
                 name: "",
-                pic: "/pics/mysql logo 2.png"
-            },
-            {
-                name: "React",
-                pic: "/pics/react logo 2.png"
+                pic: "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
             },
             {
                 name: "",
-                pic: "/pics/graphql logo 2.png"
+                pic: "https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)"
             }, 
         ]
     },
@@ -217,15 +220,15 @@ const jobs = [
         skills: [
             {
                 name: "",
-                pic: "/pics/microsoft windows logo.jpg"
-            },
-            {
-                name: "linux",
-                pic: "/pics/linux logo 2.png"
+                pic: "https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"
             },
             {
                 name: "",
-                pic: "/pics/cisco logo.jpg"
+                pic: "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
+            },
+            {
+                name: "",
+                pic: "https://img.shields.io/badge/Cisco-1BA0D7.svg?style=for-the-badge&logo=Cisco&logoColor=white"
             }, 
         ]
     },
@@ -239,16 +242,16 @@ const jobs = [
         skills: [
             {
                 name: "",
-                pic: "/pics/microsoft windows logo.jpg"
+                pic: "https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"
             },
             {
-                name: "linux",
-                pic: "/pics/linux logo 2.png"
+                name: "",
+                pic: "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
             },
             // { name: "Kiyan Software", pic: "" },
             {
                 name: "",
-                pic: "/pics/cisco logo.jpg"
+                pic: "https://img.shields.io/badge/Cisco-1BA0D7.svg?style=for-the-badge&logo=Cisco&logoColor=white"
             }, 
         ]
     }, 
