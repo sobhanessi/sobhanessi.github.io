@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "nodemon": "^2.0.19",
     "ts-node": "^10.9.1"
   }
 }
