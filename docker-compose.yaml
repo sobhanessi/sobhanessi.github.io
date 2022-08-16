@@ -2,6 +2,10 @@ version: "3.8"
 
 services:
   application:
-    build: .
+    build: ./
     ports:
       - 3000:3000
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
