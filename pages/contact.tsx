@@ -5,6 +5,12 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 export default function contact(): JSX.Element {
+  // have to work on this file in order to make this page
+  // accessible for others to contact me.
+  // one option could be to just put some information that
+  // user can interact with, I mean like putting number and emails and etc
+  // or I can just fulfill it with a form but for that I need to have a
+  // backend service
   return (
     <>
       <Navbar />

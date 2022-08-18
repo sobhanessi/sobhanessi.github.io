@@ -6,9 +6,6 @@ import Footer from "./components/Footer";
 import Jobs from "./components/Jobs";
 import Navbar from "./components/Navbar";
 
-// felan pak sazi kardam va jahayi ke kharab shode bood ro dorost kardam taghriban.
-// faghat moonde matn, ke unam bayad dobare az aval benevisam.
-
 export default function Index(): JSX.Element {
   return (
     <>
