@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import NewsTiles from "./components/NewsTiles";
 
+// here I just need to put some informations on the database file
+
 function news() {
   return (
     <>

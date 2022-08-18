@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import WritingsTiles from "./components/WritingsTiles";
 
+// also for here I just need to put some information on the database file.
+
 function writings(): JSX.Element {
   return (
     <>
