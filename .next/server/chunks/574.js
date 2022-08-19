@@ -267,6 +267,7 @@ function Navbar() {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "E": () => (/* binding */ PERSIAN_FONT_FAMILY),
 /* harmony export */   "RA": () => (/* binding */ NAVBAR_ICON_BUTTON_DISPLAY),
 /* harmony export */   "Vz": () => (/* binding */ SECONDARY_COLOR),
 /* harmony export */   "W2": () => (/* binding */ QUATERNARY_COLOR),
@@ -281,6 +282,7 @@ const SECONDARY_COLOR = "#f79d2e";
 const TERTIARY_COLOR = "#2e5aeb";
 const QUATERNARY_COLOR = "#ff6266";
 const FONT_FAMILY = "'Source Code Pro', monospace";
+const PERSIAN_FONT_FAMILY = "'Vazirmatn', sans-serif";
 const NAVBAR_ICON_BUTTON_DISPLAY = {
     xl: "none",
     lg: "none",

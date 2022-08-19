@@ -7,13 +7,15 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme";
+import { MAIN_COLOR, PERSIAN_FONT_FAMILY } from "../../public/theme/theme";
 import writings from "../../public/database/writings";
 
 function WritingsTiles(): JSX.Element {
   const writingsDivert = (href: string): void => {
     console.log(href);
   };
+
+  // const FONT_FAMILY = PERSIAN_FONT_FAMILY;
 
   return (
     <>
@@ -26,6 +28,7 @@ function WritingsTiles(): JSX.Element {
           }}
           onClick={() => writingsDivert(n.href)}
           key={n.title}
+          dir="rtl"
         >
           <Grid container xs={12} sx={{ mb: 4 }}>
             <Grid item xs={12} sm={5} md={4} lg={4} xl={4}>
@@ -69,7 +72,7 @@ function WritingsTiles(): JSX.Element {
                   component="div"
                   color="#ff6266"
                   gutterBottom
-                  sx={{ fontFamily: FONT_FAMILY, fontWeight: "bold" }}
+                  sx={{ fontWeight: "bold", fontFamily: PERSIAN_FONT_FAMILY }}
                 >
                   {n.title}
                 </Typography>
@@ -77,22 +80,33 @@ function WritingsTiles(): JSX.Element {
                   component="div"
                   color="#f79d2e"
                   gutterBottom
-                  sx={{ fontFamily: FONT_FAMILY, fontWeight: "bold" }}
+                  sx={{ fontWeight: "bold", fontFamily: PERSIAN_FONT_FAMILY }}
                 >
-                  {n.date}
+                  {n.date().getUTCFullYear()}
+                  {" / "}
+                  {n.date().getUTCMonth() + 1}
+                  {" / "}
+                  {n.date().getUTCDate()}
+                  {"   "}
+                  <span
+                    style={{ color: "white", fontFamily: PERSIAN_FONT_FAMILY }}
+                  >
+                    نویسنده :{" "}
+                  </span>
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                      fontFamily: PERSIAN_FONT_FAMILY,
+                      color: "#2e5aeb",
+                    }}
+                  >
+                    {n.author}
+                  </span>
                 </Typography>
                 <Typography
-                  component="div"
-                  color="#2e5aeb"
                   gutterBottom
-                  sx={{ fontFamily: FONT_FAMILY }}
-                >
-                  <span style={{ color: "white" }}>Author : </span>
-                  <span style={{ fontWeight: "bold" }}>{n.author}</span>
-                </Typography>
-                <Typography
-                  gutterBottom
-                  sx={{ color: "white", fontFamily: FONT_FAMILY }}
+                  sx={{ color: "white", fontFamily: PERSIAN_FONT_FAMILY }}
+                  whiteSpace="pre-line"
                 >
                   {n.brief}
                 </Typography>
