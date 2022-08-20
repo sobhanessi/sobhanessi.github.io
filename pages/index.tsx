@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 import Jobs from "./components/Jobs";
 import Navbar from "./components/Navbar";
 
+// new start from pop os!
+
 export default function Index(): JSX.Element {
   return (
     <>
