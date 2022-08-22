@@ -5,6 +5,8 @@ const schema = require("./database/schema");
 
 const PORT = process.env.PORT || 3000;
 
+// nothing ...
+
 const app = next({ dev: false });
 const handle = app.getRequestHandler();
 
