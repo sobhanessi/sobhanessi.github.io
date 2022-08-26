@@ -6,7 +6,10 @@ import Footer from "./components/Footer";
 import Jobs from "./components/Jobs";
 import Navbar from "./components/Navbar";
 
-// new start from pop os!
+// hanooz hich kari nakardam.
+// bayad vaght bezaram ta database ro update konam.
+// va baad az un benevisam faghat. hamin.
+// ghesmate sub news ro ham bayad dorost konam.
 
 export default function Index(): JSX.Element {
   return (
