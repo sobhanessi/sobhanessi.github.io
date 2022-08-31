@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -14,13 +14,10 @@ export default function contact(): JSX.Element {
   return (
     <>
       <Navbar />
-      <Container
-        maxWidth="xl"
+      <Grid
+        container
         sx={{
-          display: "flex",
-          flexDirection: "column",
           backgroundColor: MAIN_COLOR,
-          fontFamily: FONT_FAMILY,
           width: "100%",
           pt: 10,
           pb: 10,
@@ -40,7 +37,7 @@ export default function contact(): JSX.Element {
         >
           this page is under construction.
         </Typography>
-      </Container>
+      </Grid>
       <Footer />
     </>
   );
