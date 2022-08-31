@@ -89,8 +89,8 @@ function Jobs(): JSX.Element {
                     xl={2}
                     lg={1.5}
                     md={2}
-                    sm={2}
-                    xs={2}
+                    sm={4}
+                    xs={4}
                     sx={{
                       display: "inline-block",
                       mr: 1,

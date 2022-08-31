@@ -1,6 +1,13 @@
 import React from "react";
 import Aboutme from "./components/Aboutme";
-import { Avatar, Box, Container, Divider, Typography } from "@mui/material";
+import {
+  Avatar,
+  Box,
+  Container,
+  Divider,
+  Grid,
+  Typography,
+} from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme.js";
 import Footer from "./components/Footer";
 import Jobs from "./components/Jobs";
@@ -16,7 +23,7 @@ export default function Index(): JSX.Element {
     <>
       <Navbar />
       <Divider />
-      <Container
+      {/* <Container
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -25,6 +32,13 @@ export default function Index(): JSX.Element {
           fontFamily: FONT_FAMILY,
         }}
         maxWidth="xl"
+      > */}
+      <Grid
+        container
+        sx={{
+          backgroundColor: MAIN_COLOR,
+          pt: 15,
+        }}
       >
         <Container
           sx={{
@@ -62,6 +76,7 @@ export default function Index(): JSX.Element {
             </Typography>
           </Box>
         </Container>
+
         <Container
           sx={{
             display: "flex",
@@ -95,7 +110,8 @@ export default function Index(): JSX.Element {
         <Container sx={{ pt: 3, pb: 3 }}>
           <Jobs />
         </Container>
-      </Container>
+        {/* </Container> */}
+      </Grid>
       <Footer />
     </>
   );

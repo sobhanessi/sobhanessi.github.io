@@ -23,14 +23,14 @@ function Aboutme(): JSX.Element {
                     height: "100%",
                     display: "flex",
                     alignItems: "center",
-                    ml: 3,
+                    ml: 3.5,
                   }}
                   key={am.title}
                 >
                   <Avatar
                     sx={{
-                      width: 75,
-                      height: 75,
+                      width: 82,
+                      height: 82,
                       ml: -5,
                       bgcolor: am.color,
                       fontSize: "14px",
