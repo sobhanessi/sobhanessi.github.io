@@ -1,7 +1,7 @@
 import React from "react";
+import Footer from "./components/Footer";
 import { Grid } from "@mui/material";
 import { MAIN_COLOR } from "../public/theme/theme";
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import NewsTiles from "./components/NewsTiles";
 
@@ -17,6 +17,8 @@ function news() {
           display: "flex",
           backgroundColor: MAIN_COLOR,
           width: "100%",
+          pr: "5%",
+          pl: "5%",
           pt: 10,
         }}
       >

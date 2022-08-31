@@ -154,6 +154,7 @@ export default function Navbar(): JSX.Element {
       </AppBar>
       <Drawer
         sx={{
+          backgroundColor: MAIN_COLOR,
           width: drawerWidth,
           flexShrink: 0,
           "& .MuiDrawer-paper": {
@@ -166,17 +167,19 @@ export default function Navbar(): JSX.Element {
         anchor="left"
         open={open}
       >
-        <DrawerHeader>
+        <DrawerHeader sx={{ backgroundColor: MAIN_COLOR }}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
+              <ChevronLeftIcon sx={{ color: "white" }} />
             ) : (
-              <ChevronRightIcon />
+              <ChevronRightIcon sx={{ color: "white" }} />
             )}
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
+        <List
+          sx={{ backgroundColor: MAIN_COLOR, height: "100%", pl: 1, pt: 3 }}
+        >
           {titles.map((title) => (
             <Link href={title.href} key={title.header}>
               <Typography
@@ -184,7 +187,11 @@ export default function Navbar(): JSX.Element {
                 noWrap
                 href={title.header}
                 component="a"
-                sx={{ ...NAVBAR_APPBAR_TYPOGRAPHY, color: SECONDARY_COLOR }}
+                sx={{
+                  ...NAVBAR_APPBAR_TYPOGRAPHY,
+                  color: SECONDARY_COLOR,
+                  pb: 1.5,
+                }}
                 key={title.header}
               >
                 <span

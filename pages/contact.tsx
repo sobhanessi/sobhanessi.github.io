@@ -21,6 +21,8 @@ export default function contact(): JSX.Element {
           width: "100%",
           pt: 10,
           pb: 10,
+          pr: "5%",
+          pl: "5%",
         }}
       >
         <Typography
