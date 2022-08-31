@@ -13,6 +13,13 @@ function writings(): JSX.Element {
     <>
       <Head>
         <title>Sobhan Esfandayri Writings</title>
+        <meta name="description" content="sobhan esfandyari writings" />
+        <meta name="author" content="Sobhan Esfandyari" />
+        <meta
+          name="keywords"
+          content="writings, articles, refugee, asylum seekers, greece, smuggler"
+        />
+        <meta charSet="UTF-8" />
       </Head>
       <Navbar />
       <Grid

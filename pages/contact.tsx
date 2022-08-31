@@ -16,6 +16,10 @@ export default function contact(): JSX.Element {
     <>
       <Head>
         <title>Sobhan Esfandyari Contact Info</title>
+        <meta name="description" content="sobhan esfandyari contact info" />
+        <meta name="author" content="Sobhan Esfandyari" />
+        <meta name="keywords" content="contact, info, id, account" />
+        <meta charSet="UTF-8" />
       </Head>
       <Navbar />
       <Grid
