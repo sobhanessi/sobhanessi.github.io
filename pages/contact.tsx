@@ -1,20 +1,39 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
 import Footer from "./components/Footer";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import {
+  Divider,
+  Grid,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Typography,
+} from "@mui/material";
 import Head from "next/head";
-import Link from "next/link";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import Navbar from "./components/Navbar";
+import TelegramIcon from "@mui/icons-material/Telegram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function contact(): JSX.Element {
-  // have to work on this file in order to make this page
-  // accessible for others to contact me.
-  // one option could be to just put some information that
-  // user can interact with, I mean like putting number and emails and etc
-  // or I can just fulfill it with a form but for that I need to have a
-  // backend service
+  type availability = {
+    day: string;
+    hours: string;
+  };
+  const rows: availability[] = [
+    { day: "Monday", hours: "10 - 18" },
+    { day: "Tuesday", hours: "10 - 21" },
+    { day: "Wednesday", hours: "10 - 18" },
+    { day: "Thursday", hours: "10 - 21" },
+    { day: "Friday", hours: "10 - 18" },
+    { day: "Saturday", hours: "12 - 18" },
+  ];
   return (
     <>
       <Head>
@@ -35,62 +54,118 @@ export default function contact(): JSX.Element {
           flexDirection: "column",
           backgroundColor: MAIN_COLOR,
           width: "100%",
-          pt: 10,
+          pt: 20,
           pb: 10,
-          pr: "5%",
-          pl: "5%",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        <Typography
-          pt={10}
-          gutterBottom
-          sx={{
-            color: "white",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontFamily: FONT_FAMILY,
-            fontWeight: "bold",
-          }}
-        >
-          <span
-            style={{ display: "flex", flexDirection: "row", marginRight: 8 }}
+        <Grid item>
+          <Typography
+            component="a"
+            gutterBottom
+            sx={{
+              color: "white",
+              fontFamily: FONT_FAMILY,
+              display: "flex",
+              flexDirection: "row",
+              textDecoration: "none",
+            }}
+            href="https://wa.me/306979664536"
           >
-            My <MailIcon sx={{ mr: 0.5, ml: 1 }} /> Email address is{" "}
-          </span>
-          <span>
-            <Link href="mailto:sobhan@esfandyari.org">
-              sobhan@esfandayri.org
-            </Link>
-          </span>
-        </Typography>
-        <Typography
-          pt={5}
-          gutterBottom
-          sx={{
-            color: "white",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontFamily: FONT_FAMILY,
-            fontWeight: "bold",
-          }}
-        >
-          <span
-            style={{ display: "flex", flexDirection: "row", marginRight: 8 }}
+            <WhatsAppIcon sx={{ mr: 1 }} /> +306979664536
+          </Typography>
+
+          <Typography
+            component="a"
+            gutterBottom
+            sx={{
+              color: "white",
+              fontFamily: FONT_FAMILY,
+              display: "flex",
+              flexDirection: "row",
+              textDecoration: "none",
+            }}
+            href="https://t.me/sobhanessi"
           >
-            My <WhatsAppIcon sx={{ ml: 1, mr: 0.5 }} /> WhatsApp number is
-            {"  "}
-          </span>
-          <span style={{ color: "green", textDecoration: "none" }}>
-            <Link
-              href="https://wa.me/306979664536"
-              style={{ textDecoration: "none" }}
-            >
-              +306979664536
-            </Link>
-          </span>
-        </Typography>
+            <TelegramIcon sx={{ mr: 1 }} /> +306979664536
+          </Typography>
+          <Typography
+            component="a"
+            gutterBottom
+            sx={{
+              color: "white",
+              fontFamily: FONT_FAMILY,
+              display: "flex",
+              flexDirection: "row",
+              textDecoration: "none",
+            }}
+            href="mailto:sobhan@esfandyari.org"
+          >
+            <MailIcon sx={{ mr: 1 }} /> sobhan@esfandyari.org
+          </Typography>
+          <Typography
+            component="a"
+            gutterBottom
+            sx={{
+              color: "white",
+              fontFamily: FONT_FAMILY,
+              display: "flex",
+              flexDirection: "row",
+              textDecoration: "none",
+            }}
+            href="https://linkedin.com/in/sobhanesfandyari"
+          >
+            <LinkedInIcon sx={{ mr: 1 }} /> Sobhan Esfandyari
+          </Typography>
+          <Typography
+            component="a"
+            gutterBottom
+            sx={{
+              color: "white",
+              fontFamily: FONT_FAMILY,
+              display: "flex",
+              flexDirection: "row",
+              textDecoration: "none",
+            }}
+            href="https://github.com/sobhanessi"
+          >
+            <GitHubIcon sx={{ mr: 1 }} /> sobhanessi
+          </Typography>
+          <Divider color="white" />
+          <Typography
+            gutterBottom
+            sx={{
+              color: "white",
+              fontFamily: FONT_FAMILY,
+              display: "flex",
+              flexDirection: "row",
+              textDecoration: "none",
+              pt: 1,
+            }}
+          >
+            Available Hours :
+          </Typography>
+
+          <TableContainer component={Paper}>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Week Day</TableCell>
+                  <TableCell>Available Hours</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {rows.map((row) => (
+                  <TableRow key={row.day}>
+                    <TableCell>{row.day}</TableCell>
+                    <TableCell>{row.hours}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Grid>
       </Grid>
       <Footer />
     </>
