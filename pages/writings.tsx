@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
 import Footer from "./components/Footer";
@@ -11,11 +11,9 @@ function writings(): JSX.Element {
   return (
     <>
       <Navbar />
-      <Container
-        maxWidth="xl"
+      <Grid
+        container
         sx={{
-          display: "flex",
-          flexDirection: "column",
           backgroundColor: MAIN_COLOR,
           fontFamily: FONT_FAMILY,
           width: "100%",
@@ -23,7 +21,7 @@ function writings(): JSX.Element {
         }}
       >
         <WritingsTiles />
-      </Container>
+      </Grid>
 
       <Footer />
     </>
