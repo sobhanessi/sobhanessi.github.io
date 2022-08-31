@@ -35,6 +35,23 @@ function MyApp({
     href: "https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css",
     rel: "stylesheet",
     type: "text/css"
+  }), /*#__PURE__*/external_react_default().createElement("link", {
+    rel: "apple-touch-icon",
+    sizes: "180x180",
+    href: "/pics/favicon/apple-touch-icon.png"
+  }), /*#__PURE__*/external_react_default().createElement("link", {
+    rel: "icon",
+    type: "image/png",
+    sizes: "32x32",
+    href: "/pics/favicon/favicon-32x32.png"
+  }), /*#__PURE__*/external_react_default().createElement("link", {
+    rel: "icon",
+    type: "image/png",
+    sizes: "16x16",
+    href: "/pics/favicon/favicon-16x16.png"
+  }), /*#__PURE__*/external_react_default().createElement("link", {
+    rel: "manifest",
+    href: "/site.webmanifest"
   })), /*#__PURE__*/external_react_default().createElement(Component, pageProps));
 }
 
