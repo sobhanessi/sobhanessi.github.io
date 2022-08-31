@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme.js";
 import Footer from "./components/Footer";
+import Head from "next/head";
 import Jobs from "./components/Jobs";
 import Navbar from "./components/Navbar";
 
@@ -21,6 +22,9 @@ import Navbar from "./components/Navbar";
 export default function Index(): JSX.Element {
   return (
     <>
+      <Head>
+        <title>Sobhan Esfandyari Portfolio</title>
+      </Head>
       <Navbar />
       <Divider />
       {/* <Container

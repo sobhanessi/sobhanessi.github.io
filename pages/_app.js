@@ -30,6 +30,8 @@ export default function MyApp({ Component, pageProps }) {
           href="/pics/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+
+        {/* title */}
       </Head>
 
       <Component {...pageProps} />

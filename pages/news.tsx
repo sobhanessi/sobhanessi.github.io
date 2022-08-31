@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./components/Footer";
 import { Grid } from "@mui/material";
+import Head from "next/head";
 import { MAIN_COLOR } from "../public/theme/theme";
 import Navbar from "./components/Navbar";
 import NewsTiles from "./components/NewsTiles";
@@ -10,6 +11,9 @@ import NewsTiles from "./components/NewsTiles";
 function news() {
   return (
     <>
+      <Head>
+        <title>Sobhan Esfandyari Journals</title>
+      </Head>
       <Navbar />
       <Grid
         container

@@ -2,6 +2,7 @@ import React from "react";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
 import Footer from "./components/Footer";
 import { Grid } from "@mui/material";
+import Head from "next/head";
 import Navbar from "./components/Navbar";
 import WritingsTiles from "./components/WritingsTiles";
 
@@ -10,6 +11,9 @@ import WritingsTiles from "./components/WritingsTiles";
 function writings(): JSX.Element {
   return (
     <>
+      <Head>
+        <title>Sobhan Esfandayri Writings</title>
+      </Head>
       <Navbar />
       <Grid
         container
