@@ -13,6 +13,13 @@ function news() {
     <>
       <Head>
         <title>Sobhan Esfandyari Journals</title>
+        <meta name="description" content="sobhan esfandyari journals" />
+        <meta name="author" content="Sobhan Esfandyari" />
+        <meta
+          name="keywords"
+          content="computer, software, hardware, politics, iran"
+        />
+        <meta charSet="UTF-8" />
       </Head>
       <Navbar />
       <Grid

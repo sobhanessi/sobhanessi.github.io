@@ -24,19 +24,17 @@ export default function Index(): JSX.Element {
     <>
       <Head>
         <title>Sobhan Esfandyari Portfolio</title>
+        <meta name="description" content="sobhan esfandyari portfolio" />
+        <meta name="author" content="Sobhan Esfandyari" />
+        <meta
+          name="keywords"
+          content="sobhan esfandyari porfolio, sobhan esfandyari resume, sobhan esfandyari cv"
+        />
+        <meta charSet="UTF-8" />
       </Head>
       <Navbar />
       <Divider />
-      {/* <Container
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          backgroundColor: MAIN_COLOR,
-          pt: 15,
-          fontFamily: FONT_FAMILY,
-        }}
-        maxWidth="xl"
-      > */}
+
       <Grid
         container
         sx={{
@@ -59,7 +57,6 @@ export default function Index(): JSX.Element {
           />
           <Box>
             <Typography
-              // variant="h5"
               color="#f79d2e"
               sx={{
                 fontFamily: FONT_FAMILY,
@@ -114,7 +111,6 @@ export default function Index(): JSX.Element {
         <Container sx={{ pt: 3, pb: 3 }}>
           <Jobs />
         </Container>
-        {/* </Container> */}
       </Grid>
       <Footer />
     </>
