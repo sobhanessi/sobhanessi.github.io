@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
 import Footer from "./components/Footer";
+import Head from "next/head";
 import Navbar from "./components/Navbar";
 
 export default function contact(): JSX.Element {
@@ -13,6 +14,9 @@ export default function contact(): JSX.Element {
   // backend service
   return (
     <>
+      <Head>
+        <title>Sobhan Esfandyari Contact Info</title>
+      </Head>
       <Navbar />
       <Grid
         container
