@@ -6,11 +6,6 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link
-          href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
-          rel="stylesheet"
-          type="text/css"
-        />
         {/* favicon */}
         <link
           rel="apple-touch-icon"
