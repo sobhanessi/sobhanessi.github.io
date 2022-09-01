@@ -63,7 +63,7 @@ export default function contact(): JSX.Element {
         <Grid item>
           <Typography
             component="a"
-            gutterBottom
+            mb={2}
             sx={{
               color: "white",
               fontFamily: FONT_FAMILY,
@@ -78,7 +78,7 @@ export default function contact(): JSX.Element {
 
           <Typography
             component="a"
-            gutterBottom
+            mb={2}
             sx={{
               color: "white",
               fontFamily: FONT_FAMILY,
@@ -92,7 +92,7 @@ export default function contact(): JSX.Element {
           </Typography>
           <Typography
             component="a"
-            gutterBottom
+            mb={2}
             sx={{
               color: "white",
               fontFamily: FONT_FAMILY,
@@ -106,7 +106,7 @@ export default function contact(): JSX.Element {
           </Typography>
           <Typography
             component="a"
-            gutterBottom
+            mb={2}
             sx={{
               color: "white",
               fontFamily: FONT_FAMILY,
@@ -120,7 +120,7 @@ export default function contact(): JSX.Element {
           </Typography>
           <Typography
             component="a"
-            gutterBottom
+            mb={2}
             sx={{
               color: "white",
               fontFamily: FONT_FAMILY,
@@ -134,7 +134,7 @@ export default function contact(): JSX.Element {
           </Typography>
           <Divider color="white" />
           <Typography
-            gutterBottom
+            mb={2}
             sx={{
               color: "white",
               fontFamily: FONT_FAMILY,
