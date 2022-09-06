@@ -31,9 +31,12 @@ function news() {
           pr: "5%",
           pl: "5%",
           pt: 10,
+          justifyContent: "center",
         }}
       >
-        <NewsTiles />
+        <Grid item xl={8} lg={8} md={10} sm={8} xs={10}>
+          <NewsTiles />
+        </Grid>
       </Grid>
       <Footer />
     </>
