@@ -6,7 +6,7 @@ import Head from "next/head";
 import Navbar from "./components/Navbar";
 import WritingsTiles from "./components/WritingsTiles";
 
-// also for here I just need to put some information on the database file.
+// I have to change the tilings.
 
 function writings(): JSX.Element {
   return (
