@@ -6,7 +6,7 @@ import { MAIN_COLOR } from "../public/theme/theme";
 import Navbar from "./components/Navbar";
 import NewsTiles from "./components/NewsTiles";
 
-// here I just need to put some informations on the database file
+// I have to change the tiling
 
 function news() {
   return (
