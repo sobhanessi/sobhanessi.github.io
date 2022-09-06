@@ -31,7 +31,7 @@ function WritingsTiles(): JSX.Element {
           dir="rtl"
         >
           <Grid container sx={{ mb: 4 }}>
-            <Grid item xs={12} sm={5} md={4} lg={4} xl={4}>
+            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
               <CardMedia
                 sx={{
                   display: "flex",
@@ -63,7 +63,7 @@ function WritingsTiles(): JSX.Element {
               xl={8}
               lg={8}
               md={8}
-              sm={6}
+              sm={12}
               xs={12}
             >
               <CardContent>

@@ -31,9 +31,13 @@ function writings(): JSX.Element {
           pr: "5%",
           pl: "5%",
           pt: 10,
+          display: "flex",
+          justifyContent: "center",
         }}
       >
-        <WritingsTiles />
+        <Grid item xl={8} lg={8} md={10} sm={8} xs={10}>
+          <WritingsTiles />
+        </Grid>
       </Grid>
 
       <Footer />
