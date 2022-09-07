@@ -1,3 +1,15 @@
+const template = {
+  title: "",
+  href: "",
+  slug: "",
+  date: () => new Date(),
+  author: "",
+  category: [""],
+  brief: "",
+  text: ``,
+  headerImage: "",
+};
+
 const writings = [
   // {
   //   title: "داستان زندگی من",
