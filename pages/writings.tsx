@@ -26,7 +26,7 @@ function writings(): JSX.Element {
         container
         sx={{
           backgroundColor: MAIN_COLOR,
-          fontFamily: FONT_FAMILY,
+          // fontFamily: FONT_FAMILY,
           width: "100%",
           pr: "5%",
           pl: "5%",
