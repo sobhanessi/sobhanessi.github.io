@@ -1,5 +1,5 @@
 import React from "react";
-import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme";
+import { MAIN_COLOR } from "../public/theme/theme";
 import Footer from "./components/Footer";
 import { Grid } from "@mui/material";
 import Head from "next/head";
