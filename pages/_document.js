@@ -11,6 +11,8 @@ export default function Document() {
           type="text/css"
         />
       </Head>
+      {/* persian fonts */}
+      <link rel="stylesheet" href="//unpkg.com/@raha.group/persian-fonts" />
       <body>
         <Main />
         <NextScript />
