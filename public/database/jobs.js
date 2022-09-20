@@ -58,7 +58,7 @@ const jobs = [
       // },
       {
         name: "",
-        pic: "/pics/boomi.jpg",
+        pic: "/pics/boomi.png",
       },
     ],
   },
@@ -223,6 +223,7 @@ const jobs = [
     description:
       "Social media and website content manager and writer. Especially for their magazines and website in English and Farsi.",
     image: "part shamim daru.png",
+    skills: [],
   },
   {
     title: "Warehouse Manager",
@@ -255,6 +256,7 @@ const jobs = [
     description:
       "IranPharma and Iran Clean Exhibition coordinator for Part Shamim Daru. I Coordinated Their catalogues, invitation cards, rooms' design, ...",
     image: "part shamim daru.png",
+    skills: [],
   },
   {
     title: "Help Desk Technician",

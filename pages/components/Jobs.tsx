@@ -73,13 +73,15 @@ function Jobs(): JSX.Element {
             >
               {job.description}
             </Typography>
-            <Typography
-              gutterBottom
-              sx={{ color: "white", fontFamily: FONT_FAMILY, mt: 4 }}
-              title={job.title + job.period + job.contractType}
-            >
-              Skills that I used or gain in this experience that I had :
-            </Typography>
+            {job?.skills?.length > 0 && (
+              <Typography
+                gutterBottom
+                sx={{ color: "white", fontFamily: FONT_FAMILY, mt: 4 }}
+                title={job.title + job.period + job.contractType}
+              >
+                Skills that I used or gain in this experience that I had :
+              </Typography>
+            )}
 
             <Grid>
               {job.skills?.map((skill) => {
