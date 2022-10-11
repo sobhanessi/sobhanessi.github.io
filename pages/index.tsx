@@ -14,10 +14,9 @@ import Head from "next/head";
 import Jobs from "./components/Jobs";
 import Navbar from "./components/Navbar";
 
-// hanooz hich kari nakardam.
-// bayad vaght bezaram ta database ro update konam.
-// va baad az un benevisam faghat. hamin.
-// ghesmate sub news ro ham bayad dorost konam.
+// sub news ro dorost konam va link ro bezaram ke bere too
+// safheye khodesh.
+// va inke neveshte ha ro bezaram too database.
 
 export default function Index(): JSX.Element {
   return (
