@@ -11,6 +11,7 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import {
+  FONT_FAMILY,
   MAIN_COLOR,
   NAVBAR_APPBAR_TYPOGRAPHY,
   NAVBAR_CONTAINER_DISPLAY,
@@ -22,7 +23,7 @@ import List from "@mui/material/List";
 import MenuIcon from "@mui/icons-material/Menu";
 import NewsPaperIcon from "@mui/icons-material/Newspaper";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { styled, useTheme } from "@mui/material/styles";
 import Link from "next/link";
@@ -126,27 +127,28 @@ export default function Navbar(): JSX.Element {
             }}
           >
             {titles.map((title) => (
-              <Link href={title.href} key={title.header}>
-                <Typography
-                  // variant="p"
-                  noWrap
-                  href={title.header}
-                  component="a"
-                  sx={{ ...NAVBAR_APPBAR_TYPOGRAPHY, color: SECONDARY_COLOR }}
-                  key={title.header}
+              <Link
+                href={title.href}
+                key={title.header}
+                style={{
+                  ...NAVBAR_APPBAR_TYPOGRAPHY,
+                  color: SECONDARY_COLOR,
+                  fontFamily: FONT_FAMILY,
+                  textDecoration: "none",
+                  marginRight: 5,
+                }}
+              >
+                <span
+                  style={{
+                    marginRight: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    color: QUATERNARY_COLOR,
+                  }}
                 >
-                  <span
-                    style={{
-                      marginRight: "10px",
-                      display: "flex",
-                      alignItems: "center",
-                      color: QUATERNARY_COLOR,
-                    }}
-                  >
-                    {title.icon}
-                  </span>
-                  <span>{title.header}</span>
-                </Typography>
+                  {title.icon}
+                </span>
+                <span>{title.header}</span>
               </Link>
             ))}
           </Container>
@@ -181,31 +183,27 @@ export default function Navbar(): JSX.Element {
           sx={{ backgroundColor: MAIN_COLOR, height: "100%", pl: 1, pt: 3 }}
         >
           {titles.map((title) => (
-            <Link href={title.href} key={title.header}>
-              <Typography
-                // variant="p"
-                noWrap
-                href={title.header}
-                component="a"
-                sx={{
-                  ...NAVBAR_APPBAR_TYPOGRAPHY,
-                  color: SECONDARY_COLOR,
-                  pb: 1.5,
+            <Link
+              href={title.href}
+              key={title.header}
+              style={{
+                ...NAVBAR_APPBAR_TYPOGRAPHY,
+                color: SECONDARY_COLOR,
+                paddingBottom: 1.5,
+                fontFamily: FONT_FAMILY,
+              }}
+            >
+              <span
+                style={{
+                  marginRight: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                  color: QUATERNARY_COLOR,
                 }}
-                key={title.header}
               >
-                <span
-                  style={{
-                    marginRight: "10px",
-                    display: "flex",
-                    alignItems: "center",
-                    color: QUATERNARY_COLOR,
-                  }}
-                >
-                  {title.icon}
-                </span>
-                <span>{title.header}</span>
-              </Typography>
+                {title.icon}
+              </span>
+              <span>{title.header}</span>
             </Link>
           ))}
         </List>
