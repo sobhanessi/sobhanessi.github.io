@@ -10,4 +10,9 @@ module.exports = {
   compiler: {
     styledComponents: true,
   },
+  //images :
+  images: {
+    loader: "default",
+    domains: ["localhost"],
+  },
 };

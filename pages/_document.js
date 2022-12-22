@@ -35,6 +35,9 @@
 
 // export default MyDocument;
 
+//////////////////////////////////////////////////////////////////////
+// final version
+
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 // import { ServerStyleSheet } from "styled-components";
@@ -61,7 +64,8 @@ export default class MyDocument extends Document {
     );
   }
 }
-
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 // MyDocument.getInitialProps = async (ctx) => {
 //   // Render app and page and get the context of the page with collected side effects.
 //   const sheets = new ServerStyleSheets();
@@ -83,3 +87,4 @@ export default class MyDocument extends Document {
 //     ],
 //   };
 // };
+//////////////////////////////////////////////////////////////////////
