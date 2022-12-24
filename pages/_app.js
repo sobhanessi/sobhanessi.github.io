@@ -36,10 +36,10 @@ const MyApp = ({ Component, pageProps }) => {
         <link rel="manifest" href="/site.webmanifest" />
 
         {/* title */}
-        <link
+        {/* <link
           rel="shortcut icon"
           href={getStrapiMedia(global.attributes.favicon)}
-        />
+        /> */}
       </Head>
       <GlobalContext.Provider value={global.attributes}>
         <Component {...pageProps} />
@@ -56,13 +56,15 @@ MyApp.getInitialProps = async (ctx) => {
   // Calls page's `getInitialProps` and fills `appProps.pageProps`
   const appProps = await App.getInitialProps(ctx);
   // Fetch global site settings from Strapi
-  const globalRes = await fetchAPI("/global", {
-    populate: {
-      favicon: "*",
-      defaultSeo: {
-        populate: "*",
-      },
-    },
+  const globalRes = await fetchAPI("/test", {
+    populate: "*",
+    // {
+    //   favicon: "*",
+    //   defaultSeo: {
+    //     populate: "*",
+    //   },
+
+    // },
   });
   // Pass the data to our page via props
   return { ...appProps, pageProps: { global: globalRes.data } };
