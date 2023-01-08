@@ -21,7 +21,7 @@ import {
 } from "../../public/theme/theme";
 import List from "@mui/material/List";
 import MenuIcon from "@mui/icons-material/Menu";
-import NewsPaperIcon from "@mui/icons-material/Newspaper";
+// import NewsPaperIcon from "@mui/icons-material/Newspaper";
 import Toolbar from "@mui/material/Toolbar";
 // import Typography from "@mui/material/Typography";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -31,11 +31,11 @@ import Link from "next/link";
 const drawerWidth = 240;
 
 const titles = [
-  {
-    header: "NEWS/WRITINGS",
-    href: "/news-writings",
-    icon: <NewsPaperIcon />,
-  },
+  // {
+  //   header: "NEWS/WRITINGS",
+  //   href: "/news-writings",
+  //   icon: <NewsPaperIcon />,
+  // },
   { header: "PORTFOLIO/ABOUT", href: "/", icon: <AccountBoxIcon /> },
   // { header: "WRITINGS", href: "/writings", icon: <BorderColorIcon /> },
   { header: "CONTACT", href: "/contact", icon: <PhoneIcon /> },
