@@ -2,15 +2,15 @@ import React from "react";
 // import App from "next/app";
 import Head from "next/head";
 // import "../assets/css/style.css";
-import { createContext } from "react";
+// import { createContext } from "react";
 // import { fetchAPI } from "../lib/api";
 // import { getStrapiMedia } from "../lib/media";
 
 // Store Strapi Global object in context
-export const GlobalContext = createContext({});
+// export const GlobalContext = createContext({});
 
 const MyApp = ({ Component, pageProps }) => {
-  const { global } = pageProps;
+  // const { global } = pageProps;
 
   return (
     <>
@@ -41,9 +41,9 @@ const MyApp = ({ Component, pageProps }) => {
           href={getStrapiMedia(global.attributes.favicon)}
         /> */}
       </Head>
-      <GlobalContext.Provider value={global.attributes}>
-        <Component {...pageProps} />
-      </GlobalContext.Provider>
+      {/* <GlobalContext.Provider value={global.attributes}> */}
+      <Component {...pageProps} />
+      {/* </GlobalContext.Provider> */}
     </>
   );
 };
