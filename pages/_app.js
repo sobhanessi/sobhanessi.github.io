@@ -5,6 +5,7 @@ import Head from "next/head";
 // import { createContext } from "react";
 // import { fetchAPI } from "../lib/api";
 // import { getStrapiMedia } from "../lib/media";
+import { Analytics } from "@vercel/analytics/react";
 
 // Store Strapi Global object in context
 // export const GlobalContext = createContext({});
@@ -43,6 +44,7 @@ const MyApp = ({ Component, pageProps }) => {
       </Head>
       {/* <GlobalContext.Provider value={global.attributes}> */}
       <Component {...pageProps} />
+      <Analytics />
       {/* </GlobalContext.Provider> */}
     </>
   );
