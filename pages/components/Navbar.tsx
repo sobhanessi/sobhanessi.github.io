@@ -1,6 +1,6 @@
 import * as React from "react";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
-import BorderColorIcon from "@mui/icons-material/BorderColor";
+// import BorderColorIcon from "@mui/icons-material/BorderColor";
 import Box from "@mui/material/Box";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -31,9 +31,13 @@ import Link from "next/link";
 const drawerWidth = 240;
 
 const titles = [
-  { header: "NEWS", href: "/news", icon: <NewsPaperIcon /> },
+  {
+    header: "NEWS/WRITINGS",
+    href: "/news-writings",
+    icon: <NewsPaperIcon />,
+  },
   { header: "PORTFOLIO/ABOUT", href: "/", icon: <AccountBoxIcon /> },
-  { header: "WRITINGS", href: "/writings", icon: <BorderColorIcon /> },
+  // { header: "WRITINGS", href: "/writings", icon: <BorderColorIcon /> },
   { header: "CONTACT", href: "/contact", icon: <PhoneIcon /> },
 ];
 

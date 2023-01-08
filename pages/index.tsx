@@ -1,13 +1,6 @@
 import React from "react";
 import Aboutme from "./components/Aboutme";
-import {
-  Avatar,
-  Box,
-  Container,
-  Divider,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Avatar, Container, Divider, Grid, Typography } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme.js";
 import Footer from "./components/Footer";
 import Head from "next/head";
@@ -23,11 +16,14 @@ export default function Index(): JSX.Element {
     <>
       <Head>
         <title>Sobhan Esfandyari Portfolio</title>
-        <meta name="description" content="sobhan esfandyari portfolio" />
+        <meta
+          name="description"
+          content="sobhan esfandyari portfolio, about sobhan esfandyari , about sobhanessi, who is sobhanessi, who is dawshessi, sobhanessi, dawshessi"
+        />
         <meta name="author" content="Sobhan Esfandyari" />
         <meta
           name="keywords"
-          content="sobhan esfandyari porfolio, sobhan esfandyari resume, sobhan esfandyari cv"
+          content="sobhan esfandyari porfolio, sobhan esfandyari resume, sobhan esfandyari cv, about sobhan esfandyari , about sobhanessi, who is sobhanessi, who is dawshessi, sobhanessi, dawshessi"
         />
         <meta charSet="UTF-8" />
       </Head>
@@ -37,45 +33,41 @@ export default function Index(): JSX.Element {
       <Grid
         container
         sx={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
           backgroundColor: MAIN_COLOR,
           pt: 15,
         }}
       >
-        <Container
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+        <Grid item xs={5} sm={3} md={3} lg={3} xl={1.5} sx={{ maxWidth: 186 }}>
           <Avatar
             alt="Sobhan Esfandyari"
             src="/pics/sobhanessi.jpg"
-            sx={{ width: 186, height: 186, mr: 1 }}
+            sx={{ width: "100%", height: "auto" }}
           />
-          <Box>
-            <Typography
-              color="#f79d2e"
-              sx={{
-                fontFamily: FONT_FAMILY,
-                fontWeight: 700,
-                fontSize: "1.75rem",
+        </Grid>
+        <Grid item xs={6} lg={6} xl={6}>
+          <Typography
+            color="#f79d2e"
+            sx={{
+              fontFamily: FONT_FAMILY,
+              fontWeight: 700,
+              fontSize: "1.75rem",
+            }}
+          >
+            This is "Sobhan Esfandyari" (sobi){" "}
+            <span style={{ color: "white" }}>| </span>
+            <span
+              style={{
+                textDecoration: "underline #ff6266 5px",
+                color: "#2e5aeb",
               }}
             >
-              This is "Sobhan Esfandyari" (sobi){" "}
-              <span style={{ color: "white" }}>| </span>
-              <span
-                style={{
-                  textDecoration: "underline #ff6266 5px",
-                  color: "#2e5aeb",
-                }}
-              >
-                A Computer Engineer
-              </span>
-            </Typography>
-          </Box>
-        </Container>
+              A Computer Engineer
+            </span>
+          </Typography>
+        </Grid>
 
         <Container
           sx={{
