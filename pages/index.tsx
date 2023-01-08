@@ -34,17 +34,17 @@ export default function Index(): JSX.Element {
         container
         sx={{
           display: "flex",
-          justifyContent: "space-evenly",
+          justifyContent: "center",
           alignItems: "center",
           backgroundColor: MAIN_COLOR,
           pt: 15,
         }}
       >
-        <Grid item xs={5} sm={3} md={3} lg={3} xl={1.5} sx={{ maxWidth: 186 }}>
+        <Grid item sx={{ width: 185, height: 185, mr: 3 }}>
           <Avatar
             alt="Sobhan Esfandyari"
             src="/pics/sobhanessi.jpg"
-            sx={{ width: "100%", height: "auto" }}
+            sx={{ width: "100%", height: "100%" }}
           />
         </Grid>
         <Grid item xs={6} lg={6} xl={6}>
