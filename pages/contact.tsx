@@ -38,7 +38,10 @@ export default function contact(): JSX.Element {
     <>
       <Head>
         <title>Sobhan Esfandyari Contact Info</title>
-        <meta name="description" content="sobhan esfandyari contact info" />
+        <meta
+          name="description"
+          content="sobhan esfandyari contact info, sobhan esfandyari email, sobhan esfandyari whatsapp, sobhan esfandyari github, sobhanessi whatsapp, sobhanessi github, sobhanessi email"
+        />
         <meta name="author" content="Sobhan Esfandyari" />
         <meta
           name="keywords"
@@ -62,6 +65,18 @@ export default function contact(): JSX.Element {
       >
         <Grid item>
           <Typography
+            mb={2}
+            sx={{
+              color: "white",
+              fontFamily: FONT_FAMILY,
+              display: "flex",
+              flexDirection: "row",
+              textDecoration: "none",
+            }}
+          >
+            You can find below means of communication with me.
+          </Typography>
+          <Typography
             component="a"
             mb={2}
             sx={{
@@ -71,9 +86,9 @@ export default function contact(): JSX.Element {
               flexDirection: "row",
               textDecoration: "none",
             }}
-            href="https://wa.me/306979664536"
+            href="https://wa.me/4915123516042"
           >
-            <WhatsAppIcon sx={{ mr: 1 }} /> +306979664536
+            <WhatsAppIcon sx={{ mr: 1 }} /> +4915123516042
           </Typography>
 
           <Typography
@@ -88,7 +103,7 @@ export default function contact(): JSX.Element {
             }}
             href="https://t.me/sobhanessi"
           >
-            <TelegramIcon sx={{ mr: 1 }} /> +306979664536
+            <TelegramIcon sx={{ mr: 1 }} /> +4915123516042 / @sobhanessi
           </Typography>
           <Typography
             component="a"
@@ -100,9 +115,9 @@ export default function contact(): JSX.Element {
               flexDirection: "row",
               textDecoration: "none",
             }}
-            href="mailto:sobhan@esfandyari.org"
+            href="mailto:sobhan@esfandyari.com"
           >
-            <MailIcon sx={{ mr: 1 }} /> sobhan@esfandyari.org
+            <MailIcon sx={{ mr: 1 }} /> sobhan@esfandyari.com
           </Typography>
           <Typography
             component="a"
@@ -156,10 +171,25 @@ export default function contact(): JSX.Element {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {rows.map((row) => (
-                  <TableRow key={row.day}>
-                    <TableCell>{row.day}</TableCell>
-                    <TableCell>{row.hours}</TableCell>
+                {rows.map((row, index) => (
+                  <TableRow
+                    style={{ backgroundColor: index % 2 === 0 ? "gray" : "" }}
+                    key={row.day}
+                  >
+                    <TableCell
+                      style={{
+                        color: index % 2 === 0 ? "white" : "black",
+                      }}
+                    >
+                      {row.day}
+                    </TableCell>
+                    <TableCell
+                      style={{
+                        color: index % 2 === 0 ? "white" : "black",
+                      }}
+                    >
+                      {row.hours}
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
