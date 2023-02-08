@@ -1,5 +1,5 @@
 import React from "react";
-import Aboutme from "./components/Aboutme";
+// import Aboutme from "./components/Aboutme";
 import { Avatar, Container, Divider, Grid, Typography } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme.js";
 import Footer from "./components/Footer";
@@ -69,7 +69,7 @@ export default function Index(): JSX.Element {
           </Typography>
         </Grid>
 
-        <Container
+        {/* <Container
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -90,14 +90,14 @@ export default function Index(): JSX.Element {
             Here, I briefly explain who I am and what happened to me that I
             became such a person with these ideas!
           </Typography>
-        </Container>
-        <Container
+        </Container> */}
+        {/* <Container
           sx={{
             mb: 6,
           }}
         >
           <Aboutme />
-        </Container>
+        </Container> */}
         <hr style={{ color: "white", width: "100%" }} />
         <Container sx={{ pt: 3, pb: 3 }}>
           <Jobs />
