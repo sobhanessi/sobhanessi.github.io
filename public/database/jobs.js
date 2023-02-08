@@ -27,6 +27,9 @@ const jobs = [
       {
         name: "",
         pic: "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white",
+      },{
+        name: "",
+        pic: "https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white",
       },
       // {
       //   name: "",
