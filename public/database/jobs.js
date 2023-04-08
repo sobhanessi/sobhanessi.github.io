@@ -2,10 +2,10 @@ const jobs = [
   {
     title: "Software Engineer",
     company: "OnePoint Ltd.",
-    contractType: "Contract",
+    contractType: "Contract - Full Time",
     period: "7/2022 - Present",
     description:
-      "I work in this company as a software engineer in variety of fields and technologies mostly related to Dell Boomi.",
+      "I work in this company as a software engineer in variety of fields and technologies mostly related to Data Engineering",
     image: "onepoint.jpeg",
     skills: [
       {
@@ -27,7 +27,8 @@ const jobs = [
       {
         name: "",
         pic: "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white",
-      },{
+      },
+      {
         name: "",
         pic: "https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white",
       },

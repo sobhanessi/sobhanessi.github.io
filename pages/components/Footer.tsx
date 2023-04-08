@@ -5,8 +5,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Footer(): JSX.Element {
-  const year = new Date().getUTCFullYear();
-
   return (
     <>
       <Divider />
@@ -35,7 +33,7 @@ function Footer(): JSX.Element {
             gutterBottom
             sx={{ fontFamily: FONT_FAMILY, fontWeight: "bold" }}
           >
-            SOBHAN ESFANDYARI | SOBHANESSI | DAWSHESSI 2018 - {year}
+            SOBHAN ESFANDYARI | SOBHANESSI | DAWSHESSI (2018 - present)
           </Typography>
           <Box sx={{ mb: 1 }}>
             <Typography

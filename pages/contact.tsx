@@ -57,6 +57,7 @@ export default function contact(): JSX.Element {
           flexDirection: "column",
           backgroundColor: MAIN_COLOR,
           width: "100%",
+          height: "100%",
           pt: 20,
           pb: 10,
           justifyContent: "center",
@@ -173,7 +174,9 @@ export default function contact(): JSX.Element {
               <TableBody>
                 {rows.map((row, index) => (
                   <TableRow
-                    style={{ backgroundColor: index % 2 === 0 ? "gray" : "" }}
+                    style={{
+                      backgroundColor: index % 2 === 0 ? "gray" : "white",
+                    }}
                     key={row.day}
                   >
                     <TableCell
