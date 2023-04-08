@@ -7,8 +7,16 @@ function Jobs(): JSX.Element {
   return (
     <>
       {jobs.map((job) => (
-        <Grid container sx={{ mb: 4 }} key={job.title}>
-          <Grid item xs={12} sm={4} md={4} lg={4} xl={4} key={job.period}>
+        <Grid container sx={{ mb: 4 }} key={job.company + job.title + 1}>
+          <Grid
+            item
+            xs={12}
+            sm={4}
+            md={4}
+            lg={4}
+            xl={4}
+            key={job.company + job.title + 2}
+          >
             <Avatar
               src={`/pics/${job.image}`}
               alt={job.company}
@@ -22,7 +30,7 @@ function Jobs(): JSX.Element {
                 justifyContent: "center",
                 alignItems: "center",
               }}
-              key={job.title}
+              key={job.title + job.company + "pic"}
             />
           </Grid>
           <Grid
@@ -36,40 +44,40 @@ function Jobs(): JSX.Element {
             md={8}
             sm={8}
             xs={12}
-            key={job.contractType}
+            key={job.company + job.title + 3}
           >
             <Typography
               variant="h5"
-              component="div"
+              // component="div"
               color="#ff6266"
               gutterBottom
               sx={{ fontFamily: FONT_FAMILY, fontWeight: "bold" }}
-              key={job.title}
+              key={job.title + " in " + job.company}
             >
               {job.title}
             </Typography>
             <Typography
-              component="div"
+              // component="div"
               color="#f79d2e"
               gutterBottom
               sx={{ fontFamily: FONT_FAMILY }}
-              key={job.period}
+              key={job.company + job.period}
             >
               {job.period}
             </Typography>
             <Typography
-              component="div"
+              // component="div"
               color="#2e5aeb"
               gutterBottom
               sx={{ fontFamily: FONT_FAMILY }}
-              key={job.title + job.period}
+              key={job.company + job.title + job.period}
             >
               Type of contract : {job.contractType}
             </Typography>
             <Typography
               gutterBottom
               sx={{ color: "white", fontFamily: FONT_FAMILY }}
-              title={job.title + job.period + job.contractType}
+              key={job.title + job.period + job.contractType + job.period}
             >
               {job.description}
             </Typography>
@@ -77,13 +85,13 @@ function Jobs(): JSX.Element {
               <Typography
                 gutterBottom
                 sx={{ color: "white", fontFamily: FONT_FAMILY, mt: 4 }}
-                title={job.title + job.period + job.contractType}
+                key={job.title + job.period + job.contractType + 2}
               >
                 Skills that I used or gain in this experience that I had :
               </Typography>
             )}
 
-            <Grid>
+            <Grid key={job.company + job.title + 4}>
               {job.skills?.map((skill) => {
                 return (
                   <Grid
@@ -97,6 +105,7 @@ function Jobs(): JSX.Element {
                       display: "inline-block",
                       mr: 1,
                     }}
+                    key={skill.pic}
                   >
                     <Avatar
                       src={skill.pic}
@@ -107,7 +116,7 @@ function Jobs(): JSX.Element {
                         backgroundColor:
                           skill.name.length > 0 ? "white" : "relative",
                       }}
-                      key={skill.pic}
+                      key={skill.pic + 1}
                     />
                   </Grid>
                 );

@@ -40,20 +40,22 @@ export default function Index(): JSX.Element {
           pt: 15,
         }}
       >
-        <Grid item sx={{ width: 185, height: 185, mr: 3 }}>
+        <Grid item sx={{ width: 185, height: 185 }}>
           <Avatar
             alt="Sobhan Esfandyari"
             src="/pics/sobhanessi.jpg"
             sx={{ width: "100%", height: "100%" }}
           />
         </Grid>
-        <Grid item xs={6} lg={6} xl={6}>
+        <Grid item>
           <Typography
             color="#f79d2e"
             sx={{
               fontFamily: FONT_FAMILY,
               fontWeight: 700,
               fontSize: "1.75rem",
+              mr: 3,
+              ml: 3,
             }}
           >
             This is "Sobhan Esfandyari" (sobi){" "}
