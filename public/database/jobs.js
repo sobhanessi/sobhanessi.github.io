@@ -3,7 +3,7 @@ const jobs = [
     title: "Software Engineer",
     company: "OnePoint Ltd.",
     contractType: "Contract - Full Time",
-    period: "7/2022 - Present",
+    period: "7/2022 - 5/2023",
     description:
       "I work in this company as a software engineer in variety of fields and technologies mostly related to Data Engineering",
     image: "onepoint.jpeg",
