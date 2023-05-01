@@ -1,5 +1,5 @@
 import React from "react";
-import Aboutme from "./components/Aboutme";
+// import Aboutme from "./components/Aboutme";
 import { Avatar, Container, Divider, Grid, Typography } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../public/theme/theme.js";
 import Footer from "./components/Footer";
@@ -40,20 +40,22 @@ export default function Index(): JSX.Element {
           pt: 15,
         }}
       >
-        <Grid item sx={{ width: 185, height: 185, mr: 3 }}>
+        <Grid item sx={{ width: 185, height: 185 }}>
           <Avatar
             alt="Sobhan Esfandyari"
             src="/pics/sobhanessi.jpg"
             sx={{ width: "100%", height: "100%" }}
           />
         </Grid>
-        <Grid item xs={6} lg={6} xl={6}>
+        <Grid item>
           <Typography
             color="#f79d2e"
             sx={{
               fontFamily: FONT_FAMILY,
               fontWeight: 700,
               fontSize: "1.75rem",
+              mr: 3,
+              ml: 3,
             }}
           >
             This is "Sobhan Esfandyari" (sobi){" "}
@@ -69,7 +71,7 @@ export default function Index(): JSX.Element {
           </Typography>
         </Grid>
 
-        <Container
+        {/* <Container
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -90,14 +92,14 @@ export default function Index(): JSX.Element {
             Here, I briefly explain who I am and what happened to me that I
             became such a person with these ideas!
           </Typography>
-        </Container>
-        <Container
+        </Container> */}
+        {/* <Container
           sx={{
             mb: 6,
           }}
         >
           <Aboutme />
-        </Container>
+        </Container> */}
         <hr style={{ color: "white", width: "100%" }} />
         <Container sx={{ pt: 3, pb: 3 }}>
           <Jobs />
