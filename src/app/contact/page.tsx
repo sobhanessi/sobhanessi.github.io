@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { FONT_FAMILY, MAIN_COLOR } from "../../../public/theme/theme";
-import Footer from "../../components/Footer";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import {
     Divider,
@@ -211,7 +210,7 @@ export default function contact(): JSX.Element {
                     </TableContainer>
                 </Grid>
             </Grid>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }
