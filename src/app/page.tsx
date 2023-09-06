@@ -1,9 +1,9 @@
 import React from "react";
 import dynamic from "next/dynamic";
 const Jobs = dynamic(() => import("../components/Jobs"), { ssr: true });
-const Aboutme = dynamic(() => import("../components/Aboutme.jsx"), {
-    ssr: true,
-});
+// const Aboutme = dynamic(() => import("../components/Aboutme.jsx"), {
+//     ssr: true,
+// });
 import { Avatar, Container, Divider, Grid, Typography } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme.js";
 import Head from "next/head";

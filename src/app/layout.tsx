@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Page from "./page";
+
 export const metadata = {
     title: "Sobhan Esfandyari",
     description: "Sobhan Esfandyari Personal Website",

@@ -1,4 +1,5 @@
 // this file tends to work only in windows for working with docker
+/** @type {import('next').NextConfig} */
 module.exports = {
     webpackDevMiddleware: (config) => {
         config.watchOptions = {

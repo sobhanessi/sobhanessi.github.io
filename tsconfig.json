@@ -10,21 +10,31 @@
         "forceConsistentCasingInFileNames": true,
         "noFallthroughCasesInSwitch": true,
         "module": "esnext",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "preserve",
         "incremental": true,
         "noUnusedParameters": true,
-        "noImplicitReturns": true,
+        // "noImplicitReturns": true,
         "noUnusedLocals": true,
         "plugins": [
             {
                 "name": "next"
             }
-        ]
+        ],
+        "paths": {
+            "@/*": ["./src/*"]
+        }
     },
-    "include": ["src", "src/components", ".next/types/**/*.ts"],
+    "include": [
+        "src",
+        "src/components",
+        ".next/types/**/*.ts",
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx"
+    ],
     "exclude": ["node_modules"]
 }
