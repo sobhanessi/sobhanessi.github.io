@@ -1,24 +1,24 @@
 // this file tends to work only in windows for working with docker
 /** @type {import('next').NextConfig} */
 module.exports = {
-    webpackDevMiddleware: (config) => {
-        config.watchOptions = {
-            poll: 800,
-            aggregateTimeout: 300,
-        };
-        return config;
-    },
-    compiler: {
-        styledComponents: true,
-        removeConsole: {
-            exclude: ["log"],
-        },
-    },
-    //images :
-    images: {
-        loader: "default",
-        domains: ["localhost"],
-    },
+    // webpackDevMiddleware: (config) => {
+    //     config.watchOptions = {
+    //         poll: 800,
+    //         aggregateTimeout: 300,
+    //     };
+    //     return config;
+    // },
+    // compiler: {
+    //     styledComponents: true,
+    //     removeConsole: {
+    //         exclude: ["log"],
+    //     },
+    // },
+    // //images :
+    // images: {
+    //     loader: "default",
+    //     domains: ["localhost"],
+    // },
 };
 
 // module.exports = {

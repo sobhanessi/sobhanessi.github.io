@@ -28,13 +28,15 @@
             "@/*": ["./src/*"]
         }
     },
-    "include": [
-        "src",
-        "src/components",
-        ".next/types/**/*.ts",
-        "next-env.d.ts",
-        "**/*.ts",
-        "**/*.tsx"
-    ],
+    // "include": [
+    //     "src",
+    //     "src/components",
+    //     "src/app",
+    //     ".next/types/**/*.ts",
+    //     "next-env.d.ts",
+    //     "**/*.ts",
+    //     "**/*.tsx"
+    // ],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
     "exclude": ["node_modules"]
 }

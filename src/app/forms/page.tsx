@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { object, string, number, InferType } from "yup";
+import { object, string, number, InferType, boolean } from "yup";
 import { Button, Container, TextField } from "@mui/material";
 import { useFormik } from "formik";
 
@@ -9,8 +9,26 @@ const validationSchema = object({
     nachname: string().required(),
     email: string().email().required(),
     mobil: number().positive(),
+    markenName: string().required(),
     geschaeftAdresse: string(),
-    url: string().url(),
+    onlineShop: string().url(),
+    amazonUrl: string().url(),
+    produkt: string().required(),
+    produktspezifikationen: string().required(),
+    varianten: string().required(),
+    probleme: string().required(),
+    usp: string().required(),
+    konkurrenz: string().required(),
+    zielgruppe: string().required(),
+    kundenAvatar: string().required(),
+    bedenkenUndFragen: string().required(),
+    patent: boolean().required(),
+    zertifikate: string().required(),
+    topsellers: string().required(),
+    launchDatum: string().required(),
+    liveShooting: boolean().required(),
+    hauptKeywoerter: string().required(),
+    anmerkungen: string().required(),
 });
 
 type Data = InferType<typeof validationSchema>;
@@ -24,18 +42,41 @@ type Data = InferType<typeof validationSchema>;
 //     url: string;
 // };
 
+const initialValues: Data = {
+    name: "",
+    nachname: "",
+    email: "",
+    mobil: 0,
+    markenName: "",
+    geschaeftAdresse: "",
+    onlineShop: "",
+    amazonUrl: "",
+    produkt: "",
+    produktspezifikationen: "",
+    varianten: "",
+    probleme: "",
+    usp: "",
+    konkurrenz: "",
+    zielgruppe: "",
+    kundenAvatar: "",
+    bedenkenUndFragen: "",
+    patent: false,
+    zertifikate: "",
+    topsellers: "",
+    launchDatum: "",
+    liveShooting: false,
+    hauptKeywoerter: "",
+    anmerkungen: "",
+};
+
 export default function forms(): JSX.Element {
     const formik = useFormik({
-        initialValues: {
-            name: "",
-            nachname: "",
-            email: "",
-        },
+        initialValues: initialValues,
         validationSchema: validationSchema,
-        onSubmit: (values) => handleSubmit(values),
+        onSubmit: (values: Data) => handleSubmit(values),
     });
 
-    const handleSubmit = (e: InferType<typeof validationSchema>) => {
+    const handleSubmit = (e: Data) => {
         console.log(e);
     };
     return (
@@ -56,8 +97,6 @@ export default function forms(): JSX.Element {
                         }
                         helperText={formik.touched.name && formik.errors.name}
                     />
-                </div>
-                <div>
                     <TextField
                         id="nachname"
                         label="Nachname"
@@ -91,6 +130,21 @@ export default function forms(): JSX.Element {
                             formik.touched.email && Boolean(formik.errors.email)
                         }
                         helperText={formik.touched.email && formik.errors.email}
+                    />
+                    <TextField
+                        id="mobil"
+                        label="Mobil"
+                        variant="outlined"
+                        required
+                        margin="normal"
+                        type="number"
+                        value={formik.values.mobil || 0}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        error={
+                            formik.touched.mobil && Boolean(formik.errors.mobil)
+                        }
+                        helperText={formik.touched.mobil && formik.errors.mobil}
                     />
                 </div>
                 <Button variant="contained">Submit</Button>

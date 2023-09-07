@@ -7,8 +7,8 @@ import {
     Grid,
     Typography,
 } from "@mui/material";
-import { MAIN_COLOR, PERSIAN_FONT_FAMILY } from "../../../public/theme/theme";
-import writings from "../../../public/database/writings";
+import { MAIN_COLOR, PERSIAN_FONT_FAMILY } from "../../public/theme/theme";
+import writings from "../../public/database/writings";
 
 function WritingsTiles(): JSX.Element {
     const writingsDivert = (href: string): void => {

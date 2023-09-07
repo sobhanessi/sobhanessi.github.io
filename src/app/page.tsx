@@ -6,7 +6,7 @@ const Jobs = dynamic(() => import("../components/Jobs"), { ssr: true });
 // });
 import { Avatar, Container, Divider, Grid, Typography } from "@mui/material";
 import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme.js";
-import Head from "next/head";
+// import Head from "next/head";
 
 // sub news ro dorost konam va link ro bezaram ke bere too
 // safheye khodesh.

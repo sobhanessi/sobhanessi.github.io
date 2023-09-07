@@ -38,6 +38,10 @@ app.prepare().then(() => {
     //     return app.render(req, res, "/form");
     // });
 
+    server.get("/", (req, res) => {
+        return app.render(req, res, "/");
+    });
+
     server.get("*", (req, res) => {
         handle(req, res);
     });
