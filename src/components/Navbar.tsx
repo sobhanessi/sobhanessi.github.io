@@ -104,7 +104,7 @@ export default function Navbar(): JSX.Element {
     };
 
     return (
-        <Box sx={{ display: "flex" }}>
+        <>
             <CssBaseline />
             <AppBar
                 position="fixed"
@@ -114,7 +114,7 @@ export default function Navbar(): JSX.Element {
                 <Toolbar>
                     <IconButton
                         color="inherit"
-                        aria-label="open drawer"
+                        // aria-label="open drawer"
                         onClick={handleDrawerOpen}
                         edge="start"
                         sx={{
@@ -223,9 +223,6 @@ export default function Navbar(): JSX.Element {
                 </List>
                 <Divider />
             </Drawer>
-            {/* <Main open={open}>
-        <DrawerHeader />
-      </Main> */}
-        </Box>
+        </>
     );
 }
