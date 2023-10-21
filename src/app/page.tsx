@@ -1,68 +1,95 @@
 "use client";
 import React from "react";
-import dynamic from "next/dynamic";
-const Jobs = dynamic(() => import("../components/Jobs"), { ssr: true });
-// const Aboutme = dynamic(() => import("../components/Aboutme.jsx"), {
-//     ssr: true,
-// });
-import { Avatar, Container, Divider, Grid, Typography } from "@mui/material";
-import { FONT_FAMILY, MAIN_COLOR } from "../../public/theme/theme.js";
-// import Head from "next/head";
-
-// sub news ro dorost konam va link ro bezaram ke bere too
-// safheye khodesh.
-// va inke neveshte ha ro bezaram too database.
+import Image from "next/image";
+import Link from "next/link";
+import { Container, Grid, Typography } from "@mui/material";
+import Typewriter from "typewriter-effect";
+import sobhanessi from "../../public/pics/sobhanessi cropped.png";
+import { FONT_FAMILY } from "../../public/theme/theme";
 
 export default function Page(): JSX.Element {
+    const positions = [
+        "Full-Stack Developer",
+        "Software Developer",
+        "Cloud Engineer",
+        "Software Engineer",
+        "IT Manager",
+    ];
+
     return (
         <>
-            <Divider />
-
-            <Grid
-                container
-                sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    backgroundColor: MAIN_COLOR,
-                    pt: 15,
-                }}
-            >
-                <Grid item sx={{ width: 185, height: 185 }}>
-                    <Avatar
-                        alt="Sobhan Esfandyari"
-                        src="/pics/sobhanessi.jpg"
-                        sx={{ width: "100%", height: "100%" }}
+            <Grid container>
+                <Grid
+                    item
+                    xl={3.5}
+                    lg={3.5}
+                    md={3.5}
+                    sm={3.5}
+                    xs={10}
+                    fontSize={"4rem"}
+                    fontFamily={FONT_FAMILY}
+                    sx={{ overflow: "visible" }}
+                    mt={20}
+                    ml={5}
+                    // className="mx-auto"
+                >
+                    <Grid item>
+                        <Typewriter
+                            options={{
+                                autoStart: true,
+                                loop: true,
+                            }}
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString("Cloud Engineer")
+                                    .pauseFor(1000)
+                                    .deleteAll()
+                                    .typeString("Software Engineer")
+                                    .pauseFor(500)
+                                    .deleteAll()
+                                    .typeString("Full-Stack Developer")
+                                    .pauseFor(500)
+                                    .deleteAll()
+                                    .typeString("Software Developer")
+                                    .pauseFor(500)
+                                    .start();
+                            }}
+                        />
+                    </Grid>
+                </Grid>
+                <Grid
+                    item
+                    md={8}
+                    lg={8}
+                    xl={8}
+                    sm={8}
+                    xs={10}
+                    sx={{ position: "relative" }}
+                >
+                    <Image
+                        src={sobhanessi}
+                        alt="sobhan esfandyari picture"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            position: "absolute",
+                            paddingTop: 100,
+                            zIndex: 2,
+                        }}
+                    />
+                    <Image
+                        src={sobhanessi}
+                        alt="sobhan esfandyari picture"
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            transform: "translate(-12px,80px)",
+                            zIndex: 1,
+                            position: "absolute",
+                            opacity: 0.2,
+                        }}
                     />
                 </Grid>
-                <Grid item>
-                    <Typography
-                        color="#f79d2e"
-                        sx={{
-                            fontFamily: FONT_FAMILY,
-                            fontWeight: 700,
-                            fontSize: "1.75rem",
-                            mr: 3,
-                            ml: 3,
-                        }}
-                    >
-                        This is "Sobhan Esfandyari" (sobi){" "}
-                        <span style={{ color: "white" }}>| </span>
-                        <span
-                            style={{
-                                textDecoration: "underline #ff6266 5px",
-                                color: "#2e5aeb",
-                            }}
-                        >
-                            A Computer Engineer
-                        </span>
-                    </Typography>
-                </Grid>
-
-                <hr style={{ color: "white", width: "100%" }} />
-                <Container sx={{ pt: 3, pb: 3 }}>
-                    <Jobs />
-                </Container>
             </Grid>
         </>
     );
