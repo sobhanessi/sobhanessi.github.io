@@ -7,7 +7,7 @@ import {
     NavbarItem,
     NavbarMenuItem,
 } from "@heroui/navbar";
-import { Button } from "@heroui/button";
+// import { Button } from "@heroui/button";
 import { Kbd } from "@heroui/kbd";
 import { Link } from "@heroui/link";
 import { Input } from "@heroui/input";
@@ -17,14 +17,7 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-    // TwitterIcon,
-    GithubIcon,
-    // DiscordIcon,
-    HeartFilledIcon,
-    SearchIcon,
-    // Logo,
-} from "@/components/icons";
+import { GithubIcon, SearchIcon, Logo } from "@/components/icons";
 
 export const Navbar = () => {
     const searchInput = (
@@ -56,8 +49,10 @@ export const Navbar = () => {
                         className="flex justify-start items-center gap-1"
                         href="/"
                     >
-                        {/* <Logo /> */}
-                        <p className="font-bold text-inherit">ACME</p>
+                        <Logo />
+                        <p className="font-bold text-inherit">
+                            Sobhan Esfandyari
+                        </p>
                     </NextLink>
                 </NavbarBrand>
                 <ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -83,12 +78,6 @@ export const Navbar = () => {
                 justify="end"
             >
                 <NavbarItem className="hidden sm:flex gap-2">
-                    {/* <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500" />
-          </Link>
-          <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
-          </Link> */}
                     <Link
                         isExternal
                         aria-label="Github"
@@ -101,7 +90,9 @@ export const Navbar = () => {
                 <NavbarItem className="hidden lg:flex">
                     {searchInput}
                 </NavbarItem>
-                <NavbarItem className="hidden md:flex">
+                <NavbarMenuToggle className="lg:hidden" />
+
+                {/* <NavbarItem className="hidden md:flex">
                     <Button
                         isExternal
                         as={Link}
@@ -114,7 +105,7 @@ export const Navbar = () => {
                     >
                         Sponsor
                     </Button>
-                </NavbarItem>
+                </NavbarItem> */}
             </NavbarContent>
 
             <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
@@ -132,14 +123,14 @@ export const Navbar = () => {
             <NavbarMenu>
                 {searchInput}
                 <div className="mx-4 mt-2 flex flex-col gap-2">
-                    {siteConfig.navMenuItems.map((item, index) => (
+                    {siteConfig.navItems.map((item, index) => (
                         <NavbarMenuItem key={`${item}-${index}`}>
                             <Link
                                 color={
                                     index === 2
                                         ? "primary"
                                         : index ===
-                                            siteConfig.navMenuItems.length - 1
+                                            siteConfig.navItems.length - 1
                                           ? "danger"
                                           : "foreground"
                                 }
