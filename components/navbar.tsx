@@ -16,7 +16,7 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon, SearchIcon, Logo } from "@/components/icons";
+import { GithubIcon, SearchIcon, Logo, LinkedInIcon } from "@/components/icons";
 
 export const Navbar = () => {
     const searchInput = (
@@ -84,6 +84,13 @@ export const Navbar = () => {
                     >
                         <GithubIcon className="text-default-500" />
                     </Link>
+                    <Link
+                        isExternal
+                        aria-label="LinkedIn"
+                        href={siteConfig.links.linkedIn}
+                    >
+                        <LinkedInIcon className="text-default-500" />
+                    </Link>
                     <ThemeSwitch />
                 </NavbarItem>
                 <NavbarItem className="hidden lg:flex">
@@ -92,13 +99,20 @@ export const Navbar = () => {
                 <NavbarMenuToggle className="lg:hidden" />
             </NavbarContent>
 
-            <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+            <NavbarContent className="sm:hidden basis-1 pl-4 " justify="end">
                 <Link
                     isExternal
                     aria-label="Github"
                     href={siteConfig.links.github}
                 >
                     <GithubIcon className="text-default-500" />
+                </Link>
+                <Link
+                    isExternal
+                    aria-label="LinkedIn"
+                    href={siteConfig.links.linkedIn}
+                >
+                    <LinkedInIcon className="text-default-500" />
                 </Link>
                 <ThemeSwitch />
                 <NavbarMenuToggle />
