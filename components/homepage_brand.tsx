@@ -5,7 +5,7 @@ import { Link } from "@heroui/link";
 
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { GithubIcon, LinkedInIcon } from "@/components/icons";
 
 const HomePageBrand = () => {
     return (
@@ -38,8 +38,20 @@ const HomePageBrand = () => {
                     <GithubIcon size={20} />
                     GitHub
                 </Link>
+                <Link
+                    isExternal
+                    className={buttonStyles({
+                        variant: "bordered",
+                        radius: "full",
+                    })}
+                    href={siteConfig.links.linkedIn}
+                >
+                    <LinkedInIcon size={20} />
+                    LinkedIn
+                </Link>
             </div>
             <Divider className="my-4" />
+            <div className="mt-5"></div>
         </section>
     );
 };
