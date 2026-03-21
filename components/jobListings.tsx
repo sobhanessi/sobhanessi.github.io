@@ -9,7 +9,7 @@ const JobListings = () => {
     return (
         <>
             {jobs.map((job) => (
-                <Card className="py-4 mb-4">
+                <Card className="py-4 mb-4" shadow="lg" fullWidth>
                     <CardHeader className="flex gap-3">
                         <Image
                             src={`../static/resume/company-logos/${job.image}`}
@@ -17,11 +17,11 @@ const JobListings = () => {
                             radius="lg"
                             shadow="lg"
                         />
-                        <div className="flex flex-col">
-                            <p className="text-md">
+                        <div className="flex flex-col w-full text-left">
+                            <p className="text-lg font-semibold  w-full ">
                                 {job.title} at {job.company}
                             </p>
-                            <p className="text-small text-default-500">
+                            <p className="text-small text-default-500 ">
                                 {job.period}
                             </p>
                         </div>
@@ -31,10 +31,14 @@ const JobListings = () => {
                         <p>{job.description}</p>
                     </CardBody>
                     <Divider />
-                    <CardFooter>
+                    <CardFooter className="flex flex-wrap gap-2">
                         {job.skills.map((skill) => (
-                            <div className="flex">
-                                <Image src={skill.pic} className="mr-2" />
+                            <div key={skill.pic} className="shrink-0">
+                                <Image
+                                    src={skill.pic}
+                                    alt=""
+                                    className="w-auto h-auto object-contain"
+                                />
                             </div>
                         ))}
                     </CardFooter>
