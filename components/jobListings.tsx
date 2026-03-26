@@ -8,7 +8,7 @@ import { Image } from "@heroui/image";
 const JobListings = () => {
     return (
         <>
-            {jobs.map((job) => (
+            {jobs["en"].map((job) => (
                 <Card
                     className="py-4 mb-4"
                     shadow="lg"
