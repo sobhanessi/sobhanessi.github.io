@@ -1,63 +1,63 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-    name: "Sobhan Esfandyari",
-    description:
-        "Sobhan Esfandyari, Cloud Engineer, Full Stack Developer, Software Engineer,...",
-    navItems: [
-        {
-            label: "home",
-            href: "/",
-        },
-        {
-            label: "resume",
-            href: "/resume",
-        },
-        {
-            label: "blog",
-            href: "/blog",
-        },
-    ],
-    // navMenuItems: [
-    //     {
-    //         label: "Profile",
-    //         href: "/profile",
-    //     },
-    //     {
-    //         label: "Dashboard",
-    //         href: "/dashboard",
-    //     },
-    //     {
-    //         label: "Projects",
-    //         href: "/projects",
-    //     },
-    //     {
-    //         label: "Team",
-    //         href: "/team",
-    //     },
-    //     {
-    //         label: "Calendar",
-    //         href: "/calendar",
-    //     },
-    //     {
-    //         label: "Settings",
-    //         href: "/settings",
-    //     },
-    //     {
-    //         label: "Help & Feedback",
-    //         href: "/help-feedback",
-    //     },
-    //     {
-    //         label: "Logout",
-    //         href: "/logout",
-    //     },
-    // ],
-    links: {
-        github: "https://github.com/sobhanessi",
-        twitter: "https://twitter.com/hero_ui",
-        docs: "https://heroui.com",
-        discord: "https://discord.gg/9b6yyZKmH4",
-        sponsor: "https://patreon.com/jrgarciadev",
-        linkedIn: "https://linkedin.com/in/sobhanesfandyari",
+  name: "Sobhan Esfandyari",
+  description:
+    "Sobhan Esfandyari, Cloud Engineer, Full Stack Developer, Software Engineer,...",
+  navItems: [
+    {
+      label: "home",
+      href: "/",
     },
+    {
+      label: "resume",
+      href: "/resume",
+    },
+    {
+      label: "blog",
+      href: "/blog",
+    },
+  ],
+  // navMenuItems: [
+  //     {
+  //         label: "Profile",
+  //         href: "/profile",
+  //     },
+  //     {
+  //         label: "Dashboard",
+  //         href: "/dashboard",
+  //     },
+  //     {
+  //         label: "Projects",
+  //         href: "/projects",
+  //     },
+  //     {
+  //         label: "Team",
+  //         href: "/team",
+  //     },
+  //     {
+  //         label: "Calendar",
+  //         href: "/calendar",
+  //     },
+  //     {
+  //         label: "Settings",
+  //         href: "/settings",
+  //     },
+  //     {
+  //         label: "Help & Feedback",
+  //         href: "/help-feedback",
+  //     },
+  //     {
+  //         label: "Logout",
+  //         href: "/logout",
+  //     },
+  // ],
+  links: {
+    github: "https://github.com/sobhanessi",
+    twitter: "https://twitter.com/hero_ui",
+    docs: "https://heroui.com",
+    discord: "https://discord.gg/9b6yyZKmH4",
+    sponsor: "https://patreon.com/jrgarciadev",
+    linkedIn: "https://linkedin.com/in/sobhanesfandyari",
+  },
 };
