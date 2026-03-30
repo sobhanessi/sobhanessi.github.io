@@ -1,5 +1,31 @@
 {
     "HomePage": {
         "title": "hello world"
-    }
+    },
+    "jobs": [
+        {
+            "title": "Software Engineer",
+            "description": "Meine erste vollständig remote und vollständig internationale Rolle und eine der technisch anspruchsvollsten. Als Teil eines 10-köpfigen cross-funktionalen Teams arbeitete ich an einer cloudbasierten Datenpipeline für ein Solarenergie-Unternehmen mit mehreren Standorten. Das Ziel war Echtzeit-Überwachung und Kostenkontrolle, was die Entwicklung und Optimierung komplexer SQL-Abfragen auf einer Azure Data Lake & Snowflake-Infrastruktur erforderte, bei der jede Ineffizienz direkte finanzielle Auswirkungen hatte. Ich entwickelte außerdem Dell Boomi Integrationen über mehrere Datenquellen zur Reduzierung operativer Kosten und Verbesserung der Pipeline-Performance. Parallel dazu führte ich Wissenstransfer-Sessions durch, um das gesamte Team auf den neuesten Stand zu bringen. Die Remote-Arbeit über Zeitzonen hinweg mit Ingenieuren aus verschiedenen Hintergründen lehrte mich etwas genauso Wertvolles wie die Technologie selbst wie klar kommunizieren, zuverlässig liefern und verantwortlich bleiben, ohne dass jemand über die Schulter schaut."
+        },
+        {
+            "title": "Softwareentwickler und IT-Berater",
+            "description": "Fast vier Jahre selbstständige Arbeit für Kunden in verschiedenen Ländern und Branchen, nicht weil ich musste, sondern weil ich es konnte. Ich habe digitale Lösungen für KMUs in ganz Europa beraten, entwickelt und betreut. Für ein Übersetzungsbüro in Deutschland habe ich die gesamte Web-Präsenz von Grund auf aufgebaut und betreue sie bis heute. Für eine Design-Agentur entwickelte ich eine vollautomatisierte Client-Onboarding-Pipeline, eine einzige E-Mail-Freigabe des Kunden löste automatisch Ordnererstellung, Rechnungsversand, Teamzugriff und Echtzeit-Projekttracking in ClickUp aus. Alles davon. Automatisch. Für das Restaurant Anahita übernahm ich alles: von der Website-Entwicklung bis zur Google Business-Einrichtung, mit spürbarem Anstieg der Neukunden als Ergebnis. Diese Zeit hat mir etwas beigebracht, das kein Job je konnte wie man einem Kunden zuhört, versteht was er wirklich braucht, und es liefert ohne dass jemand einem die Hand hält."
+        },
+        {
+            "title": "Softwareentwickler",
+            "description": "Zwei produktive mobile Inspektions-Apps. Ein Entwickler verantwortlich für alles. Das war ich. Ich war der alleinige Maintainer der Apps I.03 & I.05 für TÜV Rheinland entwickelt in React Native, TypeScript, Docker und PostgreSQL, im Einsatz in allen Filialen deutschlandweit. Ich traf einen monatelangen Backlog von 50+ ungelösten Bugs vor. Keine Übergabe. Kein Team. Ich arbeitete ihn schnell ab, lieferte neue Features obendrauf und refactorte eine Legacy-Codebasis, die monatelang nicht richtig angefasst worden war, mit deutlicher Verbesserung von Geschwindigkeit, Stabilität und Wartbarkeit. TÜV Rheinland Stakeholder und mein Vorgesetzter haben es bemerkt. Außerdem mitentwickelt an einer Kundenkommunikations-App in einem cross-funktionalen Team von bis zu 10 Entwicklern mit Python, TypeScript und Docker, koordiniert über Jira."
+        },
+        {
+            "title": "Softwareentwickler und IT-Dozent",
+            "description": "Manche der bedeutungsvollsten Arbeiten, die ich je gemacht habe, hatten nichts mit Gehalt zu tun. Pytheas' Path war eine Non-Profit-Organisation in Athen, die mit Flüchtlings- und Migrantengemeinschaften arbeitete. Ich hatte hier zwei Rollen als Softwareentwickler und IT-Dozent. Auf der Entwicklungsseite baute und pflegte ich die Website der Organisation sowie eine maßgeschneiderte Studentenregistrierungsplattform, inkl. der dahinterliegenden Datenbank. Auf der Lehrseite entwickelte ich einen strukturierten Webentwicklungs-Lehrplan von Grund auf und unterrichtete Gruppen von 10+ persischsprachigen Studierenden. Menschen, die bei null anfingen und mehr als nur technische Fähigkeiten brauchten, um in den Arbeitsmarkt einzusteigen. Mehrere Absolventen fanden anschließend Jobs in der griechischen Tech-Branche. Zu sehen, wie jemand von null bis zur Anstellung wegen etwas kommt, das man selbst aufgebaut und gelehrt hat. Das vergisst man nicht."
+        },
+        {
+            "title": "IT-Administrator Assistenz und Lagerleiter",
+            "description": "Hier lernte ich, was es wirklich bedeutet, ein Problem von Anfang bis Ende zu besitzen. Als ich zu Part Shamim Daru kam, lief alles auf Papier. Der Lagerbestand wurde manuell erfasst. Server waren nicht verwaltet. 60+ Computer an mehreren Standorten hatten keine ordentliche Administration. Ich kam und änderte all das. Allein. Ich baute ein Lagerverwaltungssystem von Grund auf und ersetzte den gesamten papierbasierten Prozess durch eine maßgeschneiderte Datenbanklösung. Dann baute ich eine Echtzeit-Integration zwischen Vertrieb und Lager.  Sodass zum ersten Mal jeder im Unternehmen genau sehen konnte, was zu jedem Zeitpunkt auf Lager war. Das gesamte Unternehmen übernahm es. Niemand bat sie darum. Es funktionierte einfach. Ich administrierte außerdem alle internen Server inkl. der Salesabteilung verwaltete Benutzerkonten und Zugriffsrechte und pflegte die Unternehmenswebseite. Rückblickend hat diese Rolle alles geprägt, was danach kam, sie lehrte mich, dass die besten Lösungen diejenigen sind, von denen man die Menschen nicht überzeugen muss."
+        },
+        {
+            "title": "IT-Helpdesk-Techniker",
+            "description": "Meine erste echte IT-Rolle. Und sie warfen mich ins kalte Wasser. Ich unterstützte zwei Unternehmen gleichzeitig und war der alleinige IT-Techniker vor Ort, verantwortlich für 15+ Filialen in Teheran. Kein Eskalationsweg. Kein erfahrener Ingenieur zum Anrufen. Wenn etwas kaputt ging wie Hardware, Software, Netzwerk und CCTV, war ich derjenige, der es reparierte. Allein. Vor Ort. Jedes Mal. Es war keine glamouröse Arbeit. Aber sie lehrte mich etwas, das jede Rolle seitdem geprägt hat, wenn man die einzige Person im Raum ist, die das Problem lösen kann, findet man einen Weg. Schnell."
+        }
+    ]
 }

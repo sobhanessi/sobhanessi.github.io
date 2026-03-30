@@ -12,7 +12,7 @@ const JobListings = () => {
 
   return (
     <>
-      {jobs["en"].map((job, index) => (
+      {jobs.map((job, index) => (
         <Card
           key={job.company + "_" + job.title}
           fullWidth
