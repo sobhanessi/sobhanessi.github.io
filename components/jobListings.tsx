@@ -3,13 +3,16 @@ import React from "react";
 import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
 import { Divider } from "@heroui/divider";
 import { Image } from "@heroui/image";
+import { useTranslations } from "next-intl";
 
 import jobs from "../database/jobs";
 
 const JobListings = () => {
+  const t = useTranslations("");
+
   return (
     <>
-      {jobs["en"].map((job) => (
+      {jobs["en"].map((job, index) => (
         <Card
           key={job.company + "_" + job.title}
           fullWidth
@@ -25,14 +28,14 @@ const JobListings = () => {
             />
             <div className="flex flex-col w-full text-left">
               <p className="text-lg font-semibold  w-full ">
-                {job.title} at {job.company}
+                {t(`jobs.${index}.title`)} at {job.company}
               </p>
               <p className="text-small text-default-500 ">{job.period}</p>
             </div>
           </CardHeader>
           <Divider />
           <CardBody>
-            <p className="text-lg">{job.description}</p>
+            <p className="text-lg">{t(`jobs.${index}.description`)}</p>
           </CardBody>
           <Divider />
           <CardFooter className="flex flex-col gap-2 justify-start items-start">
@@ -44,6 +47,7 @@ const JobListings = () => {
               {job.skills.map((skill) => (
                 <div key={skill.pic} className="shrink-0">
                   <Image
+                    key={skill.pic}
                     alt=""
                     className="w-auto h-auto object-contain"
                     src={skill.pic}

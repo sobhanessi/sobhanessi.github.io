@@ -1,5 +1,31 @@
 {
     "HomePage": {
         "title": "hello world"
-    }
+    },
+    "jobs": [
+        {
+            "title": "Software Engineer",
+            "description": "My first fully remote, fully international role and one of the most technically challenging.As part of a 10-person cross-functional team, I worked on a cloud-based data pipeline for a solar energy company operating across multiple sites. The goal was real-time monitoring and cost control which meant designing and optimizing complex SQL queries on an Azure Data Lake & Snowflake infrastructure where every inefficiency had a direct financial impact.I also built Dell Boomi integrations across multiple data sources to reduce operational costs and improve pipeline performance. And alongside the technical work, I ran knowledge transfer sessions to bring the wider team up to speed.Working remotely across time zones with engineers from different backgrounds taught me something just as valuable as the tech like how to communicate clearly, deliver consistently and stay accountable without anyone looking over your shoulder."
+        },
+        {
+            "title": "Freelance Software Engineer",
+            "description": "Nearly four years of working independently across multiple countries and industrie, not because I had to, but because I could. I consulted, built and maintained digital solutions for SMEs across Europe. For a translation business in Germany, I built their entire web presence from scratch and still maintain it today. For a design agency, I designed a fully automated client onboarding pipeline, one email approval from a client triggered automatic folder creation, invoice generation, team access assignment and real-time project tracking in ClickUp. All of it. Automatically. For Restaurant Anahita I handled everything from website development to Google Business setup, resulting in a significant increase in new customers. This period taught me something no job ever could like how to listen to a client, understand what they actually need, and deliver it without anyone holding your hand."
+        },
+        {
+            "title": "Software Engineer",
+            "description": "Two production-grade mobile inspection apps. One developer responsible for everything. That was me. I was the sole maintainer of apps I.03 & I.05 for TÜV Rheinland built in React Native, TypeScript, Docker and PostgreSQL, deployed across all branches throughout Germany. I walked in to find a months-long backlog of 50+ unresolved bugs. No handover. No team. I cleared it fast, shipped new features on top of it, and refactored a legacy codebase that hadn't been properly touched in months. Improving speed, stability and maintainability. TÜV Rheinland stakeholders and my supervisor noticed. Also contributed to a customer communication app in a cross-functional team of up to 10 developers using Python, TypeScript and Docker, coordinated via Jira."
+        },
+        {
+            "title": "Mentor and Software Engineer",
+            "description": "Some of the most meaningful work I've ever done had nothing to do with salary. Pytheas' Path was a non-profit in Athens working with refugee and migrant communities. I wore two hats here as software developer and IT instructor. On the development side, I built and maintained the organization's website and a custom student registration platform, including the database behind it. On the teaching side, I designed a structured web development curriculum from scratch and delivered it to groups of 10+ Farsi-speaking students, people who were starting from zero and needed more than just technical skills to enter the job market. Multiple graduates went on to find jobs in the Greek tech industry.Watching someone go from zero to employed because of something you built and taught, that stays with you."
+        },
+        {
+            "title": "IT Administrator Associate and Warehouse Manager",
+            "description": "This is where I learned what it really means to own a problem from start to finish.When I joined Part Shamim Daru, everything ran on paper. Inventory was tracked manually. Servers were unmanaged. 60+ computers across multiple locations had no proper administration. I came in and changed all of that alone! I built a warehouse management system from scratch, replacing the entire paper-based process with a custom database solution. Then I built a real-time integration between the sales team and the warehouse, so for the first time, anyone in the company could see exactly what was in stock at any given moment. The whole company adopted it. Nobody asked them to. It just worked.I also administered all internal servers including the finance department infrastructure, managed user accounts and access rights, and maintained the company website.Looking back, this role shaped everything that came after. It taught me that the best solutions are the ones people don't need to be convinced to use."
+        },
+        {
+            "title": "Help Desk Technician",
+            "description": "My first real IT role. And they threw me in at the deep end.Supporting two companies simultaneously, I was the sole on-site technician responsible for 15+ branches across Tehran. No escalation path. No senior engineer to call. If something broke like hardware, software, network, CCTV, I was the one who fixed it. Alone. On-site. Every time.It wasn't glamorous work. But it taught me something that has defined every role since, when you're the only person in the room who can solve the problem, you figure it out. Fast."
+        }
+    ]
 }
