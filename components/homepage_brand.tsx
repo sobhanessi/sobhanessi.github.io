@@ -7,6 +7,8 @@ import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
 import { GithubIcon, LinkedInIcon } from "@/components/icons";
 
+//todos : 1. put my logo here. 2. maybe a short about me would make here a little bit nicer?
+
 const HomePageBrand = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
