@@ -8,6 +8,7 @@ import {
     NavbarItem,
     NavbarMenuItem,
 } from "@heroui/navbar";
+import { Divider } from "@heroui/divider";
 import Image from "next/image";
 import { Link } from "@heroui/link";
 import NextLink from "next/link";
@@ -75,11 +76,10 @@ export const Navbar = () => {
                     >
                         <LinkedInIcon className="text-default-500" />
                     </Link>
+                    <Divider orientation="vertical" />
+                    <Divider orientation="vertical" />
                     <ThemeSwitch />
                 </NavbarItem>
-                {/* <NavbarItem className="hidden lg:flex">
-                    {searchInput}
-                </NavbarItem> */}
                 <NavbarMenuToggle className="lg:hidden" />
             </NavbarContent>
 
