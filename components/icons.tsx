@@ -223,10 +223,10 @@ export const PhoneIcon: React.FC<IconSvgProps> = ({
             {...props}
         >
             <path
-                fillRule="evenodd"
                 clipRule="evenodd"
                 d="M4.5 2C3.67 2 3 2.67 3 3.5v1.75C3 11.96 8.04 17 15.25 17H17c.83 0 1.5-.67 1.5-1.5v-1.628a1.5 1.5 0 0 0-1.049-1.432l-2.25-.75a1.5 1.5 0 0 0-1.554.4l-.82.82a9.053 9.053 0 0 1-4.237-4.237l.82-.82a1.5 1.5 0 0 0 .4-1.554l-.75-2.25A1.5 1.5 0 0 0 7.628 3.5H6.128A1.64 1.64 0 0 0 4.5 2Z"
                 fill="currentColor"
+                fillRule="evenodd"
             />
         </svg>
     );
@@ -246,10 +246,10 @@ export const EmailIcon: React.FC<IconSvgProps> = ({
             {...props}
         >
             <path
-                fillRule="evenodd"
                 clipRule="evenodd"
                 d="M2 5.5A1.5 1.5 0 0 1 3.5 4h13A1.5 1.5 0 0 1 18 5.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 2 14.5v-9Zm1.5 0v.804l6.5 4.333 6.5-4.333V5.5h-13Zm13 2.53-5.712 3.808a1.5 1.5 0 0 1-1.576 0L3.5 8.03V14.5h13V8.03Z"
                 fill="currentColor"
+                fillRule="evenodd"
             />
         </svg>
     );
