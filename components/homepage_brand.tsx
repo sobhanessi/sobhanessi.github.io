@@ -60,9 +60,9 @@ const HomePageBrand = () => {
                 </Link>
             </div>
             <Divider className="my-4" />
-            <div>
-                <p className="text-center pb-3">Reach me out :</p>
-                <div className="flex gap-3">
+            <div className="flex flex-col items-center gap-3">
+                <p className="text-center pb-3">Contact Me Via:</p>
+                <div className="flex flex-wrap justify-center gap-3">
                     <Link
                         isExternal
                         className={buttonStyles({
@@ -112,7 +112,6 @@ const HomePageBrand = () => {
                     </Link>
                 </div>
             </div>
-            <div />
         </section>
     );
 };
