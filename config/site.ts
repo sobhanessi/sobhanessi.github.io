@@ -18,10 +18,10 @@ export const siteConfig = {
             label: "blog",
             href: "/blog",
         },
-        {
-            label: "contact",
-            href: "/contact",
-        },
+        // {
+        //     label: "contact",
+        //     href: "/contact",
+        // },
     ],
 
     links: {
@@ -31,7 +31,9 @@ export const siteConfig = {
         discord: "https://discord.gg/9b6yyZKmH4",
         sponsor: "https://patreon.com/jrgarciadev",
         linkedIn: "https://linkedin.com/in/sobhanesfandyari",
-        phone: "https://wa.me/+4917624629241",
+        whatsapp: "https://wa.me/+4917624629241",
+        phone: "tel:+4917624629241",
+        telegram: "https://t.me/@sobhanessi",
         email: "mailto:sobhan@esfandyari.com",
     },
 };
